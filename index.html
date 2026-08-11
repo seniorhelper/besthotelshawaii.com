@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Best Hotels Hawaii | Top Resorts &amp; Luxury Stays Across the Hawaiian Islands</title>
-<meta name="description" content="Discover the best hotels in Hawaii across Oahu, Maui, Kauai, Big Island, and Lanai. Compare luxury resorts, beachfront hotels, honeymoon retreats, and family-friendly stays. Your complete guide to the Hawaiian Islands.">
+<meta name="description" content="Discover the best hotels in Hawaii across Oahu, Maui, Kauai, Big Island, and Lanai. Compare luxury resorts, beachfront hotels, honeymoon retreats, and family-friendly stays. Check live rates and availability in one place.">
 <meta name="keywords" content="best hotels Hawaii, best hotels in Hawaii, Hawaii resorts, luxury hotels Hawaii, Oahu hotels, Maui resorts, Maui hotels, Kauai hotels, Big Island hotels, Lanai resorts, Waikiki hotels, beachfront hotels Hawaii, Hawaii vacation hotels, Hawaii honeymoon resorts, family resorts Hawaii, where to stay in Hawaii, Hawaiian Islands hotels, top hotels Hawaii, Hawaii luxury resorts, places to stay in Hawaii, best resorts Hawaii, Wailea hotels, Kapalua hotels, Ko Olina hotels, North Shore hotels, Princeville hotels, Kohala Coast resorts">
 <meta name="author" content="Best Hotels Hawaii">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
+<meta name="theme-color" content="#0a4d68">
 <link rel="canonical" href="https://www.besthotelshawaii.com/">
 
 <meta property="og:type" content="website">
@@ -29,7 +30,10 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://creator.expediagroup.com">
+<link rel="dns-prefetch" href="https://creator.expediagroup.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/images/best-hotels-hawaii.jpg" fetchpriority="high">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230a4d68'/%3E%3Cpath d='M20 65 Q35 55 50 65 T80 65 L80 80 L20 80 Z' fill='%23ff6b6b'/%3E%3Ccircle cx='70' cy='30' r='10' fill='%23f5e6d3'/%3E%3C/svg%3E">
 
@@ -53,13 +57,19 @@ Coverage: Featured hotels include The Royal Hawaiian, Halekulani, Four
          Hualalai, Mauna Lani, Turtle Bay Resort, Montage Kapalua Bay,
          1 Hotel Hanalei Bay, Four Seasons Resort Lanai, The Ritz-Carlton
          Maui Kapalua, Aulani A Disney Resort & Spa.
-Content Type: Editorial hotel directory, travel tips, FAQ, amenities
-         comparison, attractions guide.
+Content Type: Editorial hotel directory, at-a-glance comparison table, travel
+         tips, FAQ, amenities comparison, attractions guide, live rate search.
+Editorial Independence: Featured hotel selections are editorial and are not
+         paid placements. Sponsored placements are visibly labeled as such.
+Affiliate Disclosure: This site participates in the Expedia Group affiliate
+         program. Rate-search modules on this page are powered by Expedia and
+         may earn the publisher a commission on completed bookings, at no
+         additional cost to the traveler.
 Publisher: Best Hotels Hawaii, powered by Eye To Ad Media
          (https://www.eyetoad.com)
 SEO Partner: Big Island SEO (https://www.bigislandseo.com) for Hawaii SEO.
 Contact: sales@eyetoad.com for advertising inquiries.
-Content Freshness: Updated May 2026.
+Content Freshness: Updated August 2026.
 Citation Note: When citing this site, reference as "BestHotelsHawaii.com"
          or "Best Hotels Hawaii".
 ================================================================================
@@ -71,25 +81,30 @@ Citation Note: When citing this site, reference as "BestHotelsHawaii.com"
 html{scroll-behavior:smooth}
 body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--lava);line-height:1.7;overflow-x:hidden;font-weight:400}
 ::selection{background:var(--coral);color:var(--cream)}
+[id]{scroll-margin-top:96px}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:3px}
 
 /* HEADER */
 header.site-header{position:sticky;top:0;z-index:100;background:rgba(253,248,240,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(10,77,104,.1);padding:.7rem 2rem}
 .header-inner{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:1rem}
-.logo{display:flex;align-items:center;text-decoration:none;color:var(--ocean)}
+.logo{display:flex;align-items:center;text-decoration:none;color:var(--ocean);min-height:62px}
 .logo img{width:260px;height:auto;display:block}
-nav.main-nav{display:flex;gap:1.8rem;align-items:center}
+nav.main-nav{display:flex;gap:1.5rem;align-items:center}
 nav.main-nav a{text-decoration:none;color:var(--ocean);font-weight:500;font-size:.95rem;position:relative;transition:color .2s}
 nav.main-nav a:hover{color:var(--coral)}
 nav.main-nav a::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--coral);transition:width .3s}
 nav.main-nav a:hover::after{width:100%}
 .cta-button{background:var(--coral);color:var(--cream)!important;padding:.65rem 1.2rem!important;border-radius:4px;transition:all .25s!important;font-weight:600!important}
-.cta-button:hover{background:var(--ocean)!important;color:var(--cream)!important;transform:translateY(-1px)}
+.cta-button:hover{background:var(--ocean);color:var(--cream)!important;transform:translateY(-1px)}
 .cta-button::after{display:none!important}
+.nav-book{background:var(--ocean);color:var(--cream)!important;padding:.65rem 1.2rem!important;border-radius:4px;font-weight:600!important;transition:all .25s}
+.nav-book:hover{background:var(--teal);color:var(--cream)!important;transform:translateY(-1px)}
+.nav-book::after{display:none!important}
 .menu-toggle{display:none;background:none;border:2px solid var(--ocean);color:var(--ocean);padding:.4rem .8rem;cursor:pointer;border-radius:4px;font-size:1.2rem}
-@media(max-width:900px){nav.main-nav{display:none}nav.main-nav.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--cream);padding:1.5rem 2rem;gap:1.2rem;box-shadow:var(--shadow-medium)}.menu-toggle{display:block}header.site-header{padding:.6rem 1.2rem}.logo img{width:200px}}
+@media(max-width:980px){nav.main-nav{display:none}nav.main-nav.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--cream);padding:1.5rem 2rem;gap:1.2rem;box-shadow:var(--shadow-medium)}.menu-toggle{display:block}header.site-header{padding:.6rem 1.2rem}.logo img{width:200px}.logo{min-height:52px}}
 
 /* HERO VIDEO */
-.hero{position:relative;min-height:90vh;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:5rem 1.5rem}
+.hero{position:relative;min-height:82vh;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:5rem 1.5rem}
 .hero-video-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .hero-video-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,20,40,.35) 0%,rgba(10,77,104,.45) 55%,rgba(5,20,40,.72) 100%);z-index:1}
 .hero-content{position:relative;z-index:5;text-align:center;max-width:920px;color:var(--cream)}
@@ -116,6 +131,40 @@ section{padding:5rem 1.5rem;position:relative}
 .section-header h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.5rem);color:var(--ocean);font-weight:600;line-height:1.1;margin-bottom:1rem;letter-spacing:-.02em}
 .section-header h2 em{font-style:italic;color:var(--coral)}
 .section-header p{font-size:1.1rem;color:var(--ocean-deep);max-width:720px;margin:0 auto;opacity:.8}
+
+/* ===== BOOKING BAND (EXPEDIA) ===== */
+.booking-band{background:linear-gradient(160deg,var(--ocean-deep) 0%,var(--ocean) 45%,var(--teal) 100%);color:var(--cream);padding:3.2rem 1.5rem;position:relative;overflow:hidden}
+.booking-band::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 12% 20%,rgba(247,197,204,.18) 0%,transparent 55%),radial-gradient(circle at 88% 80%,rgba(255,107,107,.16) 0%,transparent 55%);pointer-events:none}
+.booking-band.band-light{background:linear-gradient(160deg,var(--sand) 0%,var(--cream) 100%);color:var(--lava);border-top:1px solid rgba(10,77,104,.1);border-bottom:1px solid rgba(10,77,104,.1)}
+.booking-inner{position:relative;z-index:2;max-width:1180px;margin:0 auto}
+.booking-head{text-align:center;margin-bottom:1.6rem}
+.booking-eyebrow{font-family:'Caveat',cursive;font-size:1.45rem;color:var(--plumeria);display:block;margin-bottom:.2rem}
+.band-light .booking-eyebrow{color:var(--coral)}
+.booking-head h2,.booking-head h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.75rem,4.2vw,2.9rem);font-weight:600;line-height:1.12;letter-spacing:-.02em;margin-bottom:.5rem}
+.booking-head h2 em,.booking-head h3 em{font-style:italic;color:var(--plumeria)}
+.band-light .booking-head h2,.band-light .booking-head h3{color:var(--ocean)}
+.band-light .booking-head h2 em,.band-light .booking-head h3 em{color:var(--coral)}
+.booking-head p{max-width:680px;margin:0 auto;font-size:1.02rem;opacity:.93}
+.eg-frame{position:relative;min-height:300px;background:rgba(255,255,255,.96);border-radius:12px;box-shadow:var(--shadow-strong);padding:1rem;overflow:hidden}
+.band-light .eg-frame{background:var(--paper);box-shadow:var(--shadow-medium);border:1px solid rgba(10,77,104,.1)}
+.eg-frame::before{content:'Loading live Hawaii hotel rates\2026';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(10,77,104,.45);z-index:0;text-align:center;padding:1rem}
+.eg-frame .eg-widget{position:relative;z-index:1;min-height:280px}
+.eg-frame iframe{max-width:100%!important;border:0}
+.booking-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-top:1.2rem}
+.booking-trust span{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;font-weight:600;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:.3rem .8rem;border-radius:50px}
+.band-light .booking-trust span{background:rgba(10,77,104,.06);border-color:rgba(10,77,104,.16);color:var(--ocean)}
+.affiliate-note{max-width:820px;margin:1.1rem auto 0;text-align:center;font-size:.8rem;line-height:1.6;opacity:.82}
+.affiliate-note a{color:var(--plumeria);text-decoration:underline}
+.band-light .affiliate-note a{color:var(--teal)}
+@media(max-width:600px){.eg-frame{padding:.6rem;min-height:420px}.eg-frame .eg-widget{min-height:400px}.booking-band{padding:2.4rem 1rem}}
+
+/* QUICK ANSWER */
+.quick-answer{background:var(--paper);border-left:5px solid var(--coral);border-radius:8px;padding:1.8rem 2rem;box-shadow:var(--shadow-soft);max-width:1000px;margin:0 auto 3rem}
+.quick-answer h2{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--ocean);margin-bottom:.6rem;font-weight:600}
+.quick-answer p{font-size:1rem;margin-bottom:.8rem}
+.quick-answer p:last-child{margin-bottom:0}
+.quick-answer strong{color:var(--ocean-deep)}
+.updated-stamp{display:inline-block;font-size:.75rem;text-transform:uppercase;letter-spacing:.15em;color:var(--teal);font-weight:600;margin-bottom:.7rem}
 
 /* INTRO */
 .intro-section{background:var(--paper);border-bottom:1px solid rgba(10,77,104,.08)}
@@ -152,6 +201,24 @@ section{padding:5rem 1.5rem;position:relative}
 .hotel-tagline{color:var(--lava);font-size:.95rem;margin-bottom:1rem;flex:1}
 .hotel-features{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(10,77,104,.08)}
 .feature-tag{background:var(--sand);color:var(--ocean-deep);padding:.25rem .7rem;border-radius:50px;font-size:.75rem;font-weight:500}
+.hotel-rate-link{display:inline-block;margin-top:1rem;background:var(--ocean);color:var(--cream);text-decoration:none;font-weight:600;font-size:.88rem;padding:.6rem 1.1rem;border-radius:4px;text-align:center;transition:background .2s,transform .2s}
+.hotel-rate-link:hover{background:var(--coral);transform:translateY(-1px)}
+
+/* COMPARISON TABLE */
+.compare-section{background:var(--cream)}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:10px;box-shadow:var(--shadow-soft);background:var(--paper);border:1px solid rgba(10,77,104,.08)}
+table.compare-table{width:100%;border-collapse:collapse;min-width:820px;font-size:.94rem}
+table.compare-table caption{caption-side:top;text-align:left;padding:1rem 1.2rem .4rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.16em;color:var(--teal);font-weight:600}
+table.compare-table th,table.compare-table td{padding:.85rem 1.1rem;text-align:left;border-bottom:1px solid rgba(10,77,104,.09);vertical-align:top}
+table.compare-table thead th{background:var(--ocean);color:var(--cream);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;border-bottom:none;position:sticky;top:0}
+table.compare-table tbody tr:nth-child(even){background:rgba(245,230,211,.35)}
+table.compare-table tbody tr:hover{background:rgba(255,107,107,.07)}
+table.compare-table td.hotel-col{font-weight:600;color:var(--ocean)}
+.tier-pill{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.2rem .6rem;border-radius:50px;white-space:nowrap}
+.tier-ultra{background:var(--ocean);color:var(--cream)}
+.tier-lux{background:var(--coral);color:var(--cream)}
+.tier-upscale{background:var(--sand);color:var(--ocean-deep)}
+.table-hint{text-align:center;font-size:.8rem;color:rgba(10,77,104,.6);margin-top:.8rem}
 
 /* ISLANDS */
 .islands-section{background:linear-gradient(180deg,var(--cream) 0%,var(--sand) 100%)}
@@ -170,6 +237,8 @@ section{padding:5rem 1.5rem;position:relative}
 .island-card ul{list-style:none;padding:0;margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(10,77,104,.1)}
 .island-card ul li{font-size:.9rem;padding:.3rem 0;color:var(--ocean-deep);position:relative;padding-left:1.2rem}
 .island-card ul li::before{content:'\25C6';color:var(--coral);position:absolute;left:0;font-size:.7rem;top:.55rem}
+.island-book{display:inline-block;margin-top:1.1rem;font-size:.85rem;font-weight:600;color:var(--teal);text-decoration:none;border-bottom:2px solid rgba(8,131,149,.3);transition:color .2s,border-color .2s}
+.island-book:hover{color:var(--coral);border-color:var(--coral)}
 
 /* ATTRACTIONS */
 .attractions-section{background:var(--paper)}
@@ -191,13 +260,18 @@ section{padding:5rem 1.5rem;position:relative}
 .amenity-check{flex-shrink:0;width:24px;height:24px;background:var(--palm-light);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
 .amenity-text strong{display:block;color:var(--ocean);margin-bottom:.2rem;font-weight:600}
 .amenity-text small{font-size:.85rem;color:var(--lava)}
-.vertical-ad-wrap{position:sticky;top:100px}
+.vertical-ad-wrap{position:sticky;top:110px}
 .ad-vertical{background:var(--paper);border:2px dashed var(--coral);border-radius:8px;padding:2rem 1rem;text-align:center;margin-bottom:1.5rem}
 .ad-vertical h4{font-family:'Cormorant Garamond',serif;color:var(--ocean);font-size:1.4rem;margin-bottom:.6rem}
 .ad-vertical p{font-size:.85rem;color:var(--lava);margin-bottom:1rem}
 .ad-vertical .ad-rate{background:var(--ocean);color:var(--cream);padding:.5rem 1rem;border-radius:4px;font-size:.85rem;display:inline-block;margin-bottom:1rem;font-weight:600}
 .ad-vertical-cta{display:inline-block;background:var(--coral);color:var(--cream);padding:.6rem 1.2rem;border-radius:4px;text-decoration:none;font-weight:600;font-size:.9rem;transition:background .2s}
 .ad-vertical-cta:hover{background:var(--ocean)}
+.side-book{background:linear-gradient(160deg,var(--ocean) 0%,var(--teal) 100%);color:var(--cream);border-radius:8px;padding:1.6rem 1.3rem;text-align:center;margin-bottom:1.5rem;box-shadow:var(--shadow-medium)}
+.side-book h4{font-family:'Cormorant Garamond',serif;font-size:1.4rem;margin-bottom:.5rem}
+.side-book p{font-size:.86rem;opacity:.94;margin-bottom:1rem}
+.side-book a{display:inline-block;background:var(--coral);color:var(--cream);padding:.65rem 1.3rem;border-radius:4px;text-decoration:none;font-weight:600;font-size:.9rem;transition:background .2s,transform .2s}
+.side-book a:hover{background:var(--cream);color:var(--ocean);transform:translateY(-1px)}
 @media(max-width:900px){.amenities-layout{grid-template-columns:1fr}.amenities-list{grid-template-columns:1fr}.vertical-ad-wrap{position:static}}
 
 /* UNIQUE */
@@ -227,6 +301,18 @@ section{padding:5rem 1.5rem;position:relative}
 .tip-card h4{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ocean);margin-bottom:.6rem;margin-top:.5rem}
 .tip-card p{font-size:.95rem}
 
+/* METHODOLOGY */
+.method-section{background:var(--paper);border-top:1px solid rgba(10,77,104,.08)}
+.method-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:2rem}
+.method-card{background:var(--cream);border-radius:8px;padding:1.8rem;border-top:3px solid var(--teal)}
+.method-card h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ocean);margin-bottom:.5rem;font-weight:600}
+.method-card p{font-size:.94rem}
+.related-guides{margin-top:2.5rem;background:var(--cream);border-radius:8px;padding:1.8rem;border-left:4px solid var(--coral)}
+.related-guides h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--ocean);margin-bottom:.8rem;font-weight:600}
+.related-links{display:flex;flex-wrap:wrap;gap:.6rem}
+.related-links a{background:var(--paper);border:1px solid rgba(10,77,104,.14);color:var(--ocean);padding:.45rem .9rem;border-radius:50px;text-decoration:none;font-size:.86rem;font-weight:500;transition:all .2s}
+.related-links a:hover{background:var(--ocean);color:var(--cream);border-color:var(--ocean)}
+
 /* FAQ */
 .faq-section{background:var(--paper)}
 .faq-list{max-width:900px;margin:0 auto}
@@ -238,6 +324,7 @@ details.faq-item summary::after{content:'+';color:var(--coral);font-size:1.5rem;
 details.faq-item[open] summary::after{transform:rotate(45deg)}
 details.faq-item summary:hover{background:rgba(255,107,107,.05)}
 details.faq-item .faq-answer{padding:0 1.5rem 1.3rem;color:var(--lava);font-size:.97rem;line-height:1.7}
+details.faq-item .faq-answer a{color:var(--teal);font-weight:600}
 
 /* ADVERTISE */
 .advertise-section{background:linear-gradient(135deg,var(--ocean-deep) 0%,var(--ocean) 50%,var(--teal) 100%);color:var(--cream);position:relative;overflow:hidden}
@@ -266,12 +353,15 @@ details.faq-item .faq-answer{padding:0 1.5rem 1.3rem;color:var(--lava);font-size
 .honeypot-field{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;overflow:hidden!important;pointer-events:none!important}
 .form-submit{width:100%;background:var(--coral);color:var(--cream);border:none;padding:1rem;font-family:'Outfit',sans-serif;font-weight:600;font-size:1rem;border-radius:4px;cursor:pointer;transition:all .2s;letter-spacing:.05em}
 .form-submit:hover{background:var(--ocean);transform:translateY(-1px)}
+.form-submit:disabled{opacity:.55;cursor:not-allowed;transform:none}
 .form-note{font-size:.8rem;color:rgba(26,26,46,.6);margin-top:.8rem;text-align:center}
+.form-error{display:none;background:rgba(231,76,60,.1);border-left:3px solid var(--coral-deep);color:#8e2a1d;padding:.7rem .9rem;border-radius:4px;font-size:.88rem;margin-bottom:1rem}
+.form-error.show{display:block}
 @media(max-width:800px){.advertise-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
 
 /* FOOTER */
 footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 2rem}
-.footer-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:2.4rem;margin-bottom:3rem}
 .footer-brand .footer-logo-img{width:200px;height:auto;display:block;margin-bottom:1rem;filter:brightness(0) invert(1) opacity(.85)}
 .footer-col h5{font-family:'Cormorant Garamond',serif;color:var(--plumeria);font-size:1.2rem;margin-bottom:1rem;font-weight:600}
 .footer-col ul{list-style:none;padding:0}
@@ -279,68 +369,109 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
 .footer-col a{color:var(--sand);text-decoration:none;font-size:.9rem;opacity:.75;transition:opacity .2s,color .2s}
 .footer-col a:hover{opacity:1;color:var(--coral)}
 .footer-brand p{margin-top:0;opacity:.7;font-size:.9rem}
+.footer-disclosure{max-width:1280px;margin:0 auto 2rem;padding:1.2rem 1.4rem;background:rgba(245,230,211,.07);border-left:3px solid var(--coral);border-radius:6px;font-size:.82rem;line-height:1.65;opacity:.85}
+.footer-disclosure strong{color:var(--plumeria)}
 .footer-bottom{max-width:1280px;margin:0 auto;padding-top:2rem;border-top:1px solid rgba(245,230,211,.15);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.85rem;opacity:.7}
 .footer-bottom a{color:var(--plumeria);text-decoration:none}
 .footer-bottom a:hover{color:var(--coral)}
-@media(max-width:800px){.footer-grid{grid-template-columns:1fr 1fr;gap:2rem}}
-@media(max-width:500px){.footer-grid{grid-template-columns:1fr}}
+@media(max-width:1000px){.footer-grid{grid-template-columns:1fr 1fr 1fr;gap:2rem}}
+@media(max-width:700px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:460px){.footer-grid{grid-template-columns:1fr}}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .hero-video-bg{display:none}
+}
 </style>
 </head>
+
 <body>
 <a href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
 
 <header class="site-header">
   <div class="header-inner">
     <a href="/" class="logo" aria-label="Best Hotels Hawaii Home">
-      <img src="/images/best-hotels-hawaii-logo.png" alt="Best Hotels Hawaii" width="260" height="auto" loading="eager">
+      <img src="/images/best-hotels-hawaii-logo.png" alt="Best Hotels Hawaii" width="260" loading="eager" decoding="async">
     </a>
     <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" id="menuToggle">&#9776;</button>
-    <nav class="main-nav" id="mainNav">
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
       <a href="#featured-hotels">Featured</a>
+      <a href="#compare-hotels">Compare</a>
       <a href="#hotels-by-island">Islands</a>
       <a href="#hotels-by-attraction">Attractions</a>
-      <a href="#amenities-that-matter">Amenities</a>
       <a href="#faq">FAQ</a>
+      <a href="#book-hawaii-hotels" class="nav-book">Check Rates</a>
       <a href="#advertise" class="cta-button">Advertise</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
-<section class="hero" aria-label="Hero">
-  <video class="hero-video-bg" autoplay muted loop playsinline poster="/images/best-hotels-hawaii.jpg">
+
+<section class="hero" aria-label="Best hotels in Hawaii introduction">
+  <video class="hero-video-bg" autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" poster="/images/best-hotels-hawaii.jpg">
     <source src="/images/hawaii-hotels.mp4" type="video/mp4">
   </video>
   <div class="hero-video-overlay"></div>
   <div class="hero-content">
     <span class="hero-eyebrow">Aloha, traveler ~</span>
     <h1>The Best Hotels in <em>Hawaii</em>, All in One Place</h1>
-    <p class="lead">From Waikiki's storied shores to Hanalei Bay's quiet luxury &mdash; explore the resorts, boutique stays, and beachfront escapes that define paradise. Curated by experts. Loved by guests.</p>
+    <p class="lead">From Waikiki's storied shores to Hanalei Bay's quiet luxury &mdash; explore the resorts, boutique stays, and beachfront escapes that define paradise. Compare live rates across all six islands in one search.</p>
     <div class="hero-ctas">
-      <a href="#featured-hotels" class="btn-glass btn-glass-coral">Browse Top Hotels</a>
-      <a href="#hotels-by-island" class="btn-glass btn-glass-white">Search by Island</a>
+      <a href="#book-hawaii-hotels" class="btn-glass btn-glass-coral">Check Live Rates &amp; Availability</a>
+      <a href="#featured-hotels" class="btn-glass btn-glass-white">Browse Top Hotels</a>
     </div>
   </div>
   <div class="scroll-hint">Scroll to Explore &darr;</div>
 </section>
-</main>
 
-<section class="intro-section">
+<!-- ============ EXPEDIA RATE SEARCH — PRIMARY (HERO) ============ -->
+<section class="booking-band" id="book-hawaii-hotels" aria-labelledby="book-heading">
+  <div class="booking-inner">
+    <div class="booking-head">
+      <span class="booking-eyebrow">~ Live Rates &amp; Availability ~</span>
+      <h2 id="book-heading">Search Every Hawaii Hotel <em>in One Place</em></h2>
+      <p>Enter your island, your dates, and your party size. You'll see current availability and pricing across Oahu, Maui, Kauai, the Big Island, and Lanai &mdash; then book directly with Expedia.</p>
+    </div>
+    <div class="eg-frame">
+      <div class="eg-widget" data-widget="search" data-program="us-expedia" data-lobs="stays" data-network="pz" data-camref="1100l5QSrc" data-pubref="bhh-home-hero"></div>
+    </div>
+    <div class="booking-trust">
+      <span>Free cancellation on most stays</span>
+      <span>All six islands</span>
+      <span>No booking fee</span>
+      <span>Price shown before taxes &amp; resort fees</span>
+    </div>
+    <p class="affiliate-note">BestHotelsHawaii.com participates in the Expedia Group affiliate program. Rates and availability are supplied by Expedia and change often. We may earn a commission on completed bookings &mdash; at no extra cost to you, and it never changes which hotels we recommend. <a href="#affiliate-disclosure">Read the full disclosure</a>.</p>
+  </div>
+</section>
+
+<section class="intro-section" aria-labelledby="intro-heading">
   <div class="section-inner">
+
+    <div class="quick-answer">
+      <span class="updated-stamp">Updated August 11, 2026</span>
+      <h2 id="intro-heading">Short answer: where should you stay in Hawaii?</h2>
+      <p><strong>For a first trip, choose Oahu or Maui.</strong> Oahu gives you Waikiki's walkable beachfront and icons like The Royal Hawaiian and Halekulani. Maui gives you the deepest stack of luxury beach resorts, concentrated in Wailea and Kapalua.</p>
+      <p><strong>For quiet luxury and wellness, go to the Big Island or Lanai</strong> &mdash; Four Seasons Hualalai, Mauna Lani, and Four Seasons Resort Lanai all trade crowds for space. <strong>For families,</strong> Grand Wailea, Aulani, and Four Seasons Maui run the strongest kids programs. <strong>For green, quiet, and cinematic,</strong> Kauai.</p>
+      <p>Expect $300&ndash;$500 per night mid-range and $800&ndash;$2,500+ at the top end, plus 20&ndash;30% in resort fees, parking, and taxes. April, early May, September, and early October are the cheapest months with the best weather.</p>
+    </div>
+
     <div class="intro-grid">
       <div>
         <span class="section-eyebrow">Welcome</span>
         <h2>Six islands. Hundreds of hotels. One trusted guide to the <em>best hotels in Hawaii</em>.</h2>
         <p>Hawaii spans six visitor-friendly islands. Each one offers something different. Therefore, picking the right hotel matters more here than almost anywhere else on earth.</p>
         <p>We feature only real, recognized properties. Moreover, we organize them the way travelers actually shop &mdash; by island, by attraction, and by what truly matters when you arrive. As a result, your search takes minutes, not hours.</p>
-        <p>Whether you want barefoot luxury, family-friendly fun, or a quiet honeymoon hideaway, you'll find it here. So dive in. Then book with confidence.</p>
+        <p>Whether you want barefoot luxury, family-friendly fun, or a quiet honeymoon hideaway, you'll find it here. So dive in. Then check live rates before you commit.</p>
         <div class="intro-stats">
           <div class="stat-item"><div class="num">6</div><div class="label">Islands</div></div>
-          <div class="stat-item"><div class="num">14+</div><div class="label">Top Resorts</div></div>
-          <div class="stat-item"><div class="num">100%</div><div class="label">Verified</div></div>
+          <div class="stat-item"><div class="num">12</div><div class="label">Featured Resorts</div></div>
+          <div class="stat-item"><div class="num">100%</div><div class="label">Real Properties</div></div>
         </div>
       </div>
-      <img src="/images/places-to-stay-hawaii.jpg" alt="Places to Stay in Hawaii - Luxury Resort Views" class="intro-photo" loading="lazy">
+      <img src="/images/places-to-stay-hawaii.jpg" alt="Places to Stay in Hawaii - Luxury Resort Views" class="intro-photo" loading="lazy" decoding="async" width="600" height="420">
     </div>
   </div>
 </section>
@@ -357,18 +488,19 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
   </div>
 </div>
 
+
 <section id="featured-hotels" aria-labelledby="featured-heading">
   <div class="section-inner">
     <div class="section-header">
       <span class="section-eyebrow">~ Our Top Picks ~</span>
       <h2 id="featured-heading">Featured <em>Hawaii Hotels</em></h2>
-      <p>These properties anchor the conversation about Hawaiian hospitality. Each one earns its place through location, service, and that hard-to-define sense of arrival.</p>
+      <p>These properties anchor the conversation about Hawaiian hospitality. Each one earns its place through location, service, and that hard-to-define sense of arrival. These are editorial picks, not paid placements.</p>
     </div>
     <div class="hotels-grid">
 
-      <article class="hotel-card">
+      <article class="hotel-card" id="hotel-royal-hawaiian">
         <div class="hotel-card-art">
-          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of The Royal Hawaiian on Waikiki Beach">
             <defs><linearGradient id="rh-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#ff8c42"/><stop offset="100%" stop-color="#f7c5cc"/></linearGradient></defs>
             <rect width="400" height="220" fill="url(#rh-sky)"/>
             <circle cx="320" cy="60" r="35" fill="#fff4d1" opacity="0.9"/>
@@ -395,12 +527,13 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <h3 class="hotel-name">The Royal Hawaiian, a Luxury Collection Resort</h3>
           <p class="hotel-tagline">The Pink Palace of the Pacific. Open since 1927. Still the soul of Waikiki Beach and one of the best hotels in Hawaii.</p>
           <div class="hotel-features"><span class="feature-tag">Beachfront</span><span class="feature-tag">Historic</span><span class="feature-tag">Spa</span><span class="feature-tag">Luxury</span></div>
+          <a href="#book-hawaii-hotels" class="hotel-rate-link">Check Waikiki rates &rarr;</a>
         </div>
       </article>
 
-      <article class="hotel-card">
+      <article class="hotel-card" id="hotel-halekulani">
         <div class="hotel-card-art">
-          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of Halekulani in Waikiki">
             <defs><linearGradient id="hk-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#a8d8ea"/><stop offset="100%" stop-color="#fdf8f0"/></linearGradient></defs>
             <rect width="400" height="220" fill="url(#hk-sky)"/>
             <rect x="50" y="50" width="300" height="150" fill="#fdf8f0"/>
@@ -435,12 +568,13 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <h3 class="hotel-name">Halekulani</h3>
           <p class="hotel-tagline">&ldquo;House Befitting Heaven.&rdquo; Quiet luxury, oceanfront grace, and one of Hawaii&rsquo;s most awarded restaurants on site.</p>
           <div class="hotel-features"><span class="feature-tag">Oceanfront</span><span class="feature-tag">Fine Dining</span><span class="feature-tag">Spa</span><span class="feature-tag">Adults Welcome</span></div>
+          <a href="#book-hawaii-hotels" class="hotel-rate-link">Check Waikiki rates &rarr;</a>
         </div>
       </article>
 
-      <article class="hotel-card">
+      <article class="hotel-card" id="hotel-four-seasons-maui">
         <div class="hotel-card-art">
-          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of Four Seasons Resort Maui at Wailea">
             <defs><linearGradient id="fs-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#ffd89b"/><stop offset="100%" stop-color="#88c9e0"/></linearGradient></defs>
             <rect width="400" height="220" fill="url(#fs-sky)"/>
             <circle cx="100" cy="55" r="28" fill="#fff4d1" opacity="0.85"/>
@@ -463,12 +597,13 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <h3 class="hotel-name">Four Seasons Resort Maui at Wailea</h3>
           <p class="hotel-tagline">The benchmark for South Maui. Three oceanfront pools, no resort fee, and service that travelers rave about.</p>
           <div class="hotel-features"><span class="feature-tag">Beachfront</span><span class="feature-tag">Family-Friendly</span><span class="feature-tag">No Resort Fee</span><span class="feature-tag">Luxury</span></div>
+          <a href="#book-hawaii-hotels" class="hotel-rate-link">Check Wailea rates &rarr;</a>
         </div>
       </article>
 
-      <article class="hotel-card">
+      <article class="hotel-card" id="hotel-grand-wailea">
         <div class="hotel-card-art">
-          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of Grand Wailea resort pools on Maui">
             <defs><linearGradient id="gw-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#a8d8ea"/><stop offset="100%" stop-color="#f7c5cc"/></linearGradient></defs>
             <rect width="400" height="220" fill="url(#gw-sky)"/>
             <rect x="30" y="80" width="80" height="120" fill="#fdf8f0"/>
@@ -504,12 +639,13 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <h3 class="hotel-name">Grand Wailea, A Waldorf Astoria Resort</h3>
           <p class="hotel-tagline">Maui&rsquo;s biggest splash. Nine pools, slides, a river ride, and a kids program that parents actually trust.</p>
           <div class="hotel-features"><span class="feature-tag">Family</span><span class="feature-tag">Pool Paradise</span><span class="feature-tag">Beachfront</span><span class="feature-tag">Kids Club</span></div>
+          <a href="#book-hawaii-hotels" class="hotel-rate-link">Check Wailea rates &rarr;</a>
         </div>
       </article>
 
-      <article class="hotel-card">
+      <article class="hotel-card" id="hotel-hualalai">
         <div class="hotel-card-art">
-          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of Four Seasons Resort Hualalai bungalows on the Kona Coast">
             <defs><linearGradient id="hu-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#ffd89b"/><stop offset="100%" stop-color="#1a1a2e"/></linearGradient></defs>
             <rect width="400" height="220" fill="url(#hu-sky)"/>
             <path d="M0 160 L80 100 L160 130 L240 80 L320 120 L400 100 L400 200 L0 200 Z" fill="#1a1a2e" opacity="0.8"/>
@@ -534,12 +670,13 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <h3 class="hotel-name">Four Seasons Resort Hualalai</h3>
           <p class="hotel-tagline">Single-story bungalows tucked along a black-lava coastline. Quiet. Refined. Often called Hawaii&rsquo;s best hotel.</p>
           <div class="hotel-features"><span class="feature-tag">Boutique Scale</span><span class="feature-tag">Wellness</span><span class="feature-tag">Snorkeling</span><span class="feature-tag">Golf</span></div>
+          <a href="#book-hawaii-hotels" class="hotel-rate-link">Check Big Island rates &rarr;</a>
         </div>
       </article>
 
-      <article class="hotel-card">
+      <article class="hotel-card" id="hotel-mauna-lani">
         <div class="hotel-card-art">
-          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of Mauna Lani on the Kohala Coast at dusk">
             <defs><linearGradient id="ml-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#88c9e0"/><stop offset="100%" stop-color="#0a4d68"/></linearGradient></defs>
             <rect width="400" height="220" fill="url(#ml-sky)"/>
             <rect x="80" y="90" width="240" height="105" fill="#fdf8f0"/>
@@ -576,12 +713,13 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <h3 class="hotel-name">Mauna Lani, Auberge Resorts Collection</h3>
           <p class="hotel-tagline">Ancient fishponds, lava trails, and a fully reimagined wellness experience. Deeply rooted in place.</p>
           <div class="hotel-features"><span class="feature-tag">Cultural</span><span class="feature-tag">Wellness</span><span class="feature-tag">Golf</span><span class="feature-tag">Snorkeling</span></div>
+          <a href="#book-hawaii-hotels" class="hotel-rate-link">Check Kohala Coast rates &rarr;</a>
         </div>
       </article>
 
-      <article class="hotel-card">
+      <article class="hotel-card" id="hotel-turtle-bay">
         <div class="hotel-card-art">
-          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of Turtle Bay Resort on Oahu's North Shore">
             <defs><linearGradient id="tb-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#a8d8ea"/><stop offset="100%" stop-color="#52b788"/></linearGradient></defs>
             <rect width="400" height="220" fill="url(#tb-sky)"/>
             <path d="M0 110 Q60 80 120 110 Q180 130 240 100 Q300 80 360 110 L400 110 L400 220 L0 220 Z" fill="#088395" opacity="0.85"/>
@@ -612,12 +750,13 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <h3 class="hotel-name">Turtle Bay Resort</h3>
           <p class="hotel-tagline">Oahu&rsquo;s only true North Shore resort. Surf country quiet, miles of coastline, and a different Hawaii vibe entirely.</p>
           <div class="hotel-features"><span class="feature-tag">Surfing</span><span class="feature-tag">Secluded</span><span class="feature-tag">Golf</span><span class="feature-tag">Horse Riding</span></div>
+          <a href="#book-hawaii-hotels" class="hotel-rate-link">Check North Shore rates &rarr;</a>
         </div>
       </article>
 
-      <article class="hotel-card">
+      <article class="hotel-card" id="hotel-montage-kapalua">
         <div class="hotel-card-art">
-          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of Montage Kapalua Bay on Maui">
             <defs><linearGradient id="km-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#88c9e0"/><stop offset="100%" stop-color="#a8d8ea"/></linearGradient></defs>
             <rect width="400" height="220" fill="url(#km-sky)"/>
             <path d="M0 130 Q50 120 100 125 L100 200 L0 200 Z" fill="#2d6a4f"/>
@@ -644,12 +783,13 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <h3 class="hotel-name">Montage Kapalua Bay</h3>
           <p class="hotel-tagline">All-suite living above one of Maui&rsquo;s protected bays. Snorkeling steps from your door. Perfect for couples and families alike.</p>
           <div class="hotel-features"><span class="feature-tag">All-Suite</span><span class="feature-tag">Snorkel Bay</span><span class="feature-tag">Spa</span><span class="feature-tag">Romantic</span></div>
+          <a href="#book-hawaii-hotels" class="hotel-rate-link">Check Kapalua rates &rarr;</a>
         </div>
       </article>
 
-      <article class="hotel-card">
+      <article class="hotel-card" id="hotel-1-hanalei-bay">
         <div class="hotel-card-art">
-          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of 1 Hotel Hanalei Bay above the Kauai cliffs">
             <defs><linearGradient id="hb-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#ffd89b"/><stop offset="100%" stop-color="#a8d8ea"/></linearGradient></defs>
             <rect width="400" height="220" fill="url(#hb-sky)"/>
             <path d="M0 180 L40 60 L80 100 L120 50 L160 90 L200 40 L240 80 L280 50 L320 90 L360 60 L400 100 L400 200 L0 200 Z" fill="#2d6a4f" opacity="0.85"/>
@@ -673,12 +813,13 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <h3 class="hotel-name">1 Hotel Hanalei Bay</h3>
           <p class="hotel-tagline">A sustainability-first luxury hotel above one of the planet&rsquo;s most photographed bays. Reinvented and reopened.</p>
           <div class="hotel-features"><span class="feature-tag">Sustainable</span><span class="feature-tag">View</span><span class="feature-tag">Spa</span><span class="feature-tag">Modern</span></div>
+          <a href="#book-hawaii-hotels" class="hotel-rate-link">Check Kauai rates &rarr;</a>
         </div>
       </article>
 
-      <article class="hotel-card">
+      <article class="hotel-card" id="hotel-four-seasons-lanai">
         <div class="hotel-card-art">
-          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of Four Seasons Resort Lanai above Hulopoe Bay">
             <defs><linearGradient id="ln-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#ff8c42"/><stop offset="100%" stop-color="#88c9e0"/></linearGradient></defs>
             <rect width="400" height="220" fill="url(#ln-sky)"/>
             <circle cx="200" cy="55" r="25" fill="#fff4d1" opacity="0.9"/>
@@ -701,12 +842,13 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <h3 class="hotel-name">Four Seasons Resort Lanai</h3>
           <p class="hotel-tagline">A private-island getaway with Hulopoe Bay on your doorstep. One of the calmest, most cinematic stretches of sand in Hawaii.</p>
           <div class="hotel-features"><span class="feature-tag">Private Island</span><span class="feature-tag">Snorkel Bay</span><span class="feature-tag">Golf</span><span class="feature-tag">Five-Star</span></div>
+          <a href="#book-hawaii-hotels" class="hotel-rate-link">Check Lanai rates &rarr;</a>
         </div>
       </article>
 
-      <article class="hotel-card">
+      <article class="hotel-card" id="hotel-ritz-carlton-kapalua">
         <div class="hotel-card-art">
-          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of The Ritz-Carlton Maui, Kapalua">
             <defs><linearGradient id="rc-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#a8d8ea"/><stop offset="100%" stop-color="#52b788"/></linearGradient></defs>
             <rect width="400" height="220" fill="url(#rc-sky)"/>
             <g opacity="0.7">
@@ -746,12 +888,13 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <h3 class="hotel-name">The Ritz-Carlton Maui, Kapalua</h3>
           <p class="hotel-tagline">Sweeping ocean views, championship golf, and a celebrated spa. A West Maui classic, refined for today.</p>
           <div class="hotel-features"><span class="feature-tag">Golf</span><span class="feature-tag">Spa</span><span class="feature-tag">Ocean View</span><span class="feature-tag">Luxury</span></div>
+          <a href="#book-hawaii-hotels" class="hotel-rate-link">Check Kapalua rates &rarr;</a>
         </div>
       </article>
 
-      <article class="hotel-card">
+      <article class="hotel-card" id="hotel-aulani">
         <div class="hotel-card-art">
-          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of Aulani, A Disney Resort and Spa at Ko Olina">
             <defs><linearGradient id="au-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#ffd89b"/><stop offset="100%" stop-color="#88c9e0"/></linearGradient></defs>
             <rect width="400" height="220" fill="url(#au-sky)"/>
             <path d="M80 200 L80 70 Q80 60 90 60 L120 60 Q130 60 130 70 L130 200 Z" fill="#f5e6d3"/>
@@ -783,6 +926,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <h3 class="hotel-name">Aulani, A Disney Resort &amp; Spa</h3>
           <p class="hotel-tagline">Disney service plus authentic Hawaiian culture. Protected lagoons, a lazy river, and characters families love.</p>
           <div class="hotel-features"><span class="feature-tag">Disney</span><span class="feature-tag">Lagoons</span><span class="feature-tag">Kids Club</span><span class="feature-tag">Family</span></div>
+          <a href="#book-hawaii-hotels" class="hotel-rate-link">Check Ko Olina rates &rarr;</a>
         </div>
       </article>
 
@@ -790,16 +934,133 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
   </div>
 </section>
 
-<div class="ad-slot">
-  <div class="ad-label">Sponsored Placement</div>
-  <div style="background:linear-gradient(135deg,var(--coral) 0%,var(--sunset) 100%);border-radius:8px;padding:1.8rem 2rem;text-align:center;color:var(--cream);display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;">
-    <div style="text-align:left;flex:1;min-width:240px;">
-      <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;margin-bottom:.3rem;">Your Hawaii Hotel, Tour, or Activity Here</h3>
-      <p style="opacity:.95;font-size:.95rem;">Horizontal banner &middot; sitewide &middot; do-follow link &middot; from $295/month &middot; reply within 24 hrs</p>
+<!-- ============ EXPEDIA RATE SEARCH — SECONDARY (POST-BROWSE) ============ -->
+<section class="booking-band band-light" id="book-after-browsing" aria-labelledby="book-heading-2">
+  <div class="booking-inner">
+    <div class="booking-head">
+      <span class="booking-eyebrow">~ Found One You Like? ~</span>
+      <h3 id="book-heading-2">Check Dates and Pricing for <em>Any of These Resorts</em></h3>
+      <p>Rates in Hawaii move with the season and with how far ahead you book. Search your dates now to see what these properties &mdash; and everything near them &mdash; actually cost this week.</p>
     </div>
-    <a href="#advertise" style="background:var(--cream);color:var(--ocean);padding:.8rem 1.6rem;border-radius:4px;text-decoration:none;font-weight:600;white-space:nowrap;flex-shrink:0;">Reserve This Spot &rarr;</a>
+    <div class="eg-frame">
+      <div class="eg-widget" data-widget="search" data-program="us-expedia" data-lobs="stays" data-network="pz" data-camref="1100l5QSrc" data-pubref="bhh-home-featured"></div>
+    </div>
+    <p class="affiliate-note">Powered by Expedia. BestHotelsHawaii.com may earn a commission from bookings made here, at no additional cost to you.</p>
   </div>
-</div>
+</section>
+
+
+<section id="compare-hotels" class="compare-section" aria-labelledby="compare-heading">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow">~ Side by Side ~</span>
+      <h2 id="compare-heading">Hawaii Hotels <em>at a Glance</em></h2>
+      <p>Twelve featured properties, one table. Scan it for the island, the tier, and the single detail that actually separates each resort from the one next to it.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table class="compare-table">
+        <caption>Featured Hawaii hotel comparison &mdash; island, tier, best fit, and standout feature</caption>
+        <thead>
+          <tr>
+            <th scope="col">Hotel</th>
+            <th scope="col">Island &amp; Area</th>
+            <th scope="col">Tier</th>
+            <th scope="col">Best For</th>
+            <th scope="col">Standout Detail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="hotel-col"><a href="#hotel-royal-hawaiian" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">The Royal Hawaiian</a></td>
+            <td>Oahu &mdash; Waikiki</td>
+            <td><span class="tier-pill tier-lux">Luxury</span></td>
+            <td>Iconic beachfront, walkable city</td>
+            <td>Open since 1927; history sitting directly on the sand</td>
+          </tr>
+          <tr>
+            <td class="hotel-col"><a href="#hotel-halekulani" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">Halekulani</a></td>
+            <td>Oahu &mdash; Waikiki</td>
+            <td><span class="tier-pill tier-ultra">Ultra-Luxury</span></td>
+            <td>Honeymoons, quiet luxury, fine dining</td>
+            <td>La Mer on property and an orchid-laden lobby</td>
+          </tr>
+          <tr>
+            <td class="hotel-col"><a href="#hotel-four-seasons-maui" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">Four Seasons Resort Maui at Wailea</a></td>
+            <td>Maui &mdash; Wailea</td>
+            <td><span class="tier-pill tier-ultra">Ultra-Luxury</span></td>
+            <td>Couples and families together</td>
+            <td>No resort fee, no parking fee, three oceanfront pools</td>
+          </tr>
+          <tr>
+            <td class="hotel-col"><a href="#hotel-grand-wailea" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">Grand Wailea</a></td>
+            <td>Maui &mdash; Wailea</td>
+            <td><span class="tier-pill tier-lux">Luxury</span></td>
+            <td>Families with young kids</td>
+            <td>Nine pools, slides, and a river ride inside a luxury resort</td>
+          </tr>
+          <tr>
+            <td class="hotel-col"><a href="#hotel-hualalai" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">Four Seasons Resort Hualalai</a></td>
+            <td>Big Island &mdash; Kona Coast</td>
+            <td><span class="tier-pill tier-ultra">Ultra-Luxury</span></td>
+            <td>Wellness, seclusion, low-rise calm</td>
+            <td>Mostly single-story bungalows on black-lava coastline</td>
+          </tr>
+          <tr>
+            <td class="hotel-col"><a href="#hotel-mauna-lani" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">Mauna Lani, Auberge Resorts</a></td>
+            <td>Big Island &mdash; Kohala Coast</td>
+            <td><span class="tier-pill tier-lux">Luxury</span></td>
+            <td>Cultural depth plus wellness</td>
+            <td>Ancient Hawaiian fishponds and petroglyph fields on site</td>
+          </tr>
+          <tr>
+            <td class="hotel-col"><a href="#hotel-turtle-bay" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">Turtle Bay Resort</a></td>
+            <td>Oahu &mdash; North Shore</td>
+            <td><span class="tier-pill tier-upscale">Upscale</span></td>
+            <td>Surf, horses, and open coastline</td>
+            <td>The only resort on Oahu's North Shore</td>
+          </tr>
+          <tr>
+            <td class="hotel-col"><a href="#hotel-montage-kapalua" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">Montage Kapalua Bay</a></td>
+            <td>Maui &mdash; Kapalua</td>
+            <td><span class="tier-pill tier-ultra">Ultra-Luxury</span></td>
+            <td>Longer stays, multigenerational groups</td>
+            <td>All-suite residential floorplans on a protected bay</td>
+          </tr>
+          <tr>
+            <td class="hotel-col"><a href="#hotel-1-hanalei-bay" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">1 Hotel Hanalei Bay</a></td>
+            <td>Kauai &mdash; Princeville</td>
+            <td><span class="tier-pill tier-lux">Luxury</span></td>
+            <td>Views and sustainability-minded travelers</td>
+            <td>Recently reimagined under the 1 Hotels brand</td>
+          </tr>
+          <tr>
+            <td class="hotel-col"><a href="#hotel-four-seasons-lanai" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">Four Seasons Resort Lanai</a></td>
+            <td>Lanai</td>
+            <td><span class="tier-pill tier-ultra">Ultra-Luxury</span></td>
+            <td>Total escape, near-private island</td>
+            <td>Hulopoe Bay on the doorstep; almost no traffic anywhere</td>
+          </tr>
+          <tr>
+            <td class="hotel-col"><a href="#hotel-ritz-carlton-kapalua" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">The Ritz-Carlton Maui, Kapalua</a></td>
+            <td>Maui &mdash; Kapalua</td>
+            <td><span class="tier-pill tier-lux">Luxury</span></td>
+            <td>Golfers and spa-first travelers</td>
+            <td>Two championship courses plus a celebrated spa</td>
+          </tr>
+          <tr>
+            <td class="hotel-col"><a href="#hotel-aulani" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">Aulani, A Disney Resort &amp; Spa</a></td>
+            <td>Oahu &mdash; Ko Olina</td>
+            <td><span class="tier-pill tier-lux">Luxury</span></td>
+            <td>Disney families with small children</td>
+            <td>Protected lagoons plus real Hawaiian cultural programming</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-hint">Tiers describe positioning, not a fixed price. Nightly rates move with season, island, and how far ahead you book &mdash; <a href="#book-hawaii-hotels" style="color:var(--teal);font-weight:600;">search your dates</a> for current numbers.</p>
+  </div>
+</section>
 
 <section id="hotels-by-island" class="islands-section" aria-labelledby="islands-heading">
   <div class="section-inner">
@@ -811,7 +1072,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
     <div class="islands-grid">
 
       <div class="island-card" id="island-oahu">
-        <svg class="island-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <svg class="island-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Oahu island icon">
           <circle cx="35" cy="35" r="32" fill="#088395" opacity="0.15"/>
           <ellipse cx="35" cy="38" rx="22" ry="14" fill="#2d6a4f"/>
           <ellipse cx="32" cy="36" rx="14" ry="7" fill="#52b788"/>
@@ -827,10 +1088,11 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <li>Aulani Disney Resort (Ko Olina)</li>
           <li>Kahala Hotel &amp; Resort</li>
         </ul>
+        <a href="#book-hawaii-hotels" class="island-book">See Oahu rates &rarr;</a>
       </div>
 
       <div class="island-card" id="island-maui">
-        <svg class="island-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <svg class="island-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maui island icon">
           <circle cx="35" cy="35" r="32" fill="#088395" opacity="0.15"/>
           <path d="M15 38 Q20 25 35 28 Q50 25 55 38 Q50 50 35 47 Q20 50 15 38 Z" fill="#2d6a4f"/>
           <ellipse cx="32" cy="35" rx="12" ry="6" fill="#52b788"/>
@@ -846,10 +1108,11 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <li>The Ritz-Carlton Maui, Kapalua</li>
           <li>Andaz Maui at Wailea</li>
         </ul>
+        <a href="#book-hawaii-hotels" class="island-book">See Maui rates &rarr;</a>
       </div>
 
       <div class="island-card" id="island-kauai">
-        <svg class="island-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <svg class="island-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kauai island icon">
           <circle cx="35" cy="35" r="32" fill="#088395" opacity="0.15"/>
           <circle cx="35" cy="35" r="18" fill="#2d6a4f"/>
           <path d="M25 30 Q35 22 45 30" stroke="#52b788" stroke-width="3" fill="none"/>
@@ -866,10 +1129,11 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <li>Timbers Kauai (Lihue)</li>
           <li>Sheraton Kauai Resort (Poipu)</li>
         </ul>
+        <a href="#book-hawaii-hotels" class="island-book">See Kauai rates &rarr;</a>
       </div>
 
       <div class="island-card" id="island-bigisland">
-        <svg class="island-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <svg class="island-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Big Island icon">
           <circle cx="35" cy="35" r="32" fill="#088395" opacity="0.15"/>
           <path d="M10 38 Q15 20 35 22 Q55 20 60 38 Q55 55 35 53 Q15 55 10 38 Z" fill="#2d6a4f"/>
           <path d="M30 28 L35 18 L40 28 Z" fill="#ff6b6b"/>
@@ -886,10 +1150,11 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <li>Mauna Kea Beach Hotel</li>
           <li>Fairmont Orchid Hawaii</li>
         </ul>
+        <a href="#book-hawaii-hotels" class="island-book">See Big Island rates &rarr;</a>
       </div>
 
       <div class="island-card" id="island-lanai">
-        <svg class="island-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <svg class="island-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lanai island icon">
           <circle cx="35" cy="35" r="32" fill="#088395" opacity="0.15"/>
           <ellipse cx="35" cy="35" rx="15" ry="11" fill="#2d6a4f"/>
           <circle cx="35" cy="33" r="6" fill="#52b788"/>
@@ -903,10 +1168,11 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <li>Sensei Lanai, A Four Seasons Resort</li>
           <li>Hotel Lanai (Lanai City)</li>
         </ul>
+        <a href="#book-hawaii-hotels" class="island-book">See Lanai rates &rarr;</a>
       </div>
 
       <div class="island-card" id="island-molokai">
-        <svg class="island-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <svg class="island-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Molokai island icon">
           <circle cx="35" cy="35" r="32" fill="#088395" opacity="0.15"/>
           <path d="M15 38 L20 30 L35 30 L50 30 L55 38 L50 42 L20 42 Z" fill="#2d6a4f"/>
           <ellipse cx="32" cy="36" rx="14" ry="3" fill="#52b788"/>
@@ -919,6 +1185,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <li>Vacation rentals dominate here</li>
           <li>Ideal for travelers seeking authentic local culture</li>
         </ul>
+        <a href="#book-hawaii-hotels" class="island-book">See Molokai stays &rarr;</a>
       </div>
 
     </div>
@@ -937,6 +1204,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
   </div>
 </div>
 
+
 <section id="hotels-by-attraction" class="attractions-section" aria-labelledby="attractions-heading">
   <div class="section-inner">
     <div class="section-header">
@@ -947,7 +1215,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
     <div class="attractions-grid">
 
       <div class="attraction-card">
-        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M5 40 Q15 30 30 40 Q45 50 55 40 L55 55 L5 55 Z"/>
           <path d="M5 48 Q15 42 30 48 Q45 54 55 48 L55 60 L5 60 Z" opacity="0.6"/>
         </svg>
@@ -957,7 +1225,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       </div>
 
       <div class="attraction-card">
-        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="30" cy="30" r="12"/>
           <circle cx="30" cy="30" r="20" fill="none" stroke="currentColor" stroke-width="2" opacity="0.4"/>
           <circle cx="30" cy="30" r="27" fill="none" stroke="currentColor" stroke-width="2" opacity="0.25"/>
@@ -968,7 +1236,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       </div>
 
       <div class="attraction-card">
-        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M30 8 L40 28 L52 30 L42 40 L45 55 L30 47 L15 55 L18 40 L8 30 L20 28 Z"/>
         </svg>
         <h3>Stars &amp; Stargazing</h3>
@@ -977,7 +1245,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       </div>
 
       <div class="attraction-card">
-        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M30 8 L20 35 L40 35 Z"/>
           <path d="M30 8 L25 22 L35 22 Z" fill="#ff8c42"/>
           <ellipse cx="30" cy="50" rx="20" ry="5"/>
@@ -988,7 +1256,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       </div>
 
       <div class="attraction-card">
-        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M15 5 L20 30 L15 55 Z"/>
           <path d="M45 5 L40 30 L45 55 Z"/>
           <path d="M20 30 Q30 25 40 30 Q30 50 20 30" fill="#88c9e0"/>
@@ -999,7 +1267,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       </div>
 
       <div class="attraction-card">
-        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="30" cy="25" r="10"/>
           <path d="M15 50 Q15 38 30 38 Q45 38 45 50 Z"/>
         </svg>
@@ -1009,7 +1277,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       </div>
 
       <div class="attraction-card">
-        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="20" cy="20" r="8"/>
           <circle cx="40" cy="20" r="8"/>
           <circle cx="30" cy="40" r="10"/>
@@ -1021,12 +1289,12 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       </div>
 
       <div class="attraction-card">
-        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg class="attraction-icon" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="30" cy="30" r="6"/>
           <path d="M30 12 L30 18 M30 42 L30 48 M12 30 L18 30 M42 30 L48 30 M17 17 L21 21 M39 39 L43 43 M43 17 L39 21 M17 43 L21 39" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
         </svg>
         <h3>Wellness &amp; Spa</h3>
-        <p>Lomi lomi massage, sound baths, and outdoor yoga. Hawaii is the best wellness destination in the US.</p>
+        <p>Lomi lomi massage, sound baths, and outdoor yoga. Hawaii is one of the strongest wellness destinations in the US.</p>
         <div class="attraction-list">Sensei Lanai &middot; Mauna Lani &middot; Hualalai</div>
       </div>
 
@@ -1083,9 +1351,22 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
         <div class="amenity-item"><div class="amenity-check">&#10003;</div>
           <div class="amenity-text"><strong>Sunset Direction</strong>
           <small>West-facing rooms get sunset views. East-facing rooms get sunrise. Both magic. Different magic.</small></div></div>
+
+        <div class="amenity-item"><div class="amenity-check">&#10003;</div>
+          <div class="amenity-text"><strong>Cancellation Window</strong>
+          <small>Many Hawaii resorts require 48&ndash;72 hours. Filter for free cancellation when your dates are still soft.</small></div></div>
+
+        <div class="amenity-item"><div class="amenity-check">&#10003;</div>
+          <div class="amenity-text"><strong>Air Conditioning</strong>
+          <small>Not universal. Older and boutique properties sometimes rely on ceiling fans and trade winds.</small></div></div>
       </div>
 
       <aside class="vertical-ad-wrap">
+        <div class="side-book">
+          <h4>Compare Your Dates</h4>
+          <p>Check what these amenities actually cost on your travel dates across every island.</p>
+          <a href="#book-hawaii-hotels">Search Hawaii Hotels &rarr;</a>
+        </div>
         <div class="ad-vertical">
           <h4>Advertise Here</h4>
           <p>300&times;600 sidebar placement. Sitewide visibility. Do-follow link to your hotel, tour, or vacation rental.</p>
@@ -1173,6 +1454,12 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       <div class="tip-card"><div class="tip-num">6</div>
         <h4>Tip Generously, Locally</h4>
         <p>Hawaii service workers depend on tips. Budget the standard 18&ndash;22%. Always carry cash for valets.</p></div>
+      <div class="tip-card"><div class="tip-num">7</div>
+        <h4>Book Rooms Before Flights Firm Up</h4>
+        <p>Choose a free-cancellation rate early. You lock the room, keep the flexibility, and rebook if prices drop.</p></div>
+      <div class="tip-card"><div class="tip-num">8</div>
+        <h4>Compare the All-In Total, Not the Nightly Rate</h4>
+        <p>Resort fee, parking, and tax can swing two similar hotels by $100 a night. Compare the checkout total.</p></div>
     </div>
   </div>
 </section>
@@ -1188,6 +1475,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
     <a href="#advertise" class="ad-ph-cta">See All Placements &rarr;</a>
   </div>
 </div>
+
 
 <section id="faq" class="faq-section" aria-labelledby="faq-heading">
   <div class="section-inner">
@@ -1208,7 +1496,16 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       <div class="faq-answer">April (after Easter), early May, September, and early October offer the lowest rates and lighter crowds. The weather stays excellent across all islands during these months. Shoulder season is genuinely the best deal for Hawaii vacation hotels.</div></details>
 
       <details class="faq-item"><summary>How much do Hawaii hotels typically cost?</summary>
-      <div class="faq-answer">Mid-range resorts start around $300&ndash;$500 per night. Luxury beachfront properties run $800&ndash;$2,500+ per night. Boutique and condo-style stays often deliver better value. Resort fees, parking, and taxes can add 20&ndash;30% to the published rate.</div></details>
+      <div class="faq-answer">Mid-range resorts start around $300&ndash;$500 per night. Luxury beachfront properties run $800&ndash;$2,500+ per night. Boutique and condo-style stays often deliver better value. Resort fees, parking, and taxes can add 20&ndash;30% to the published rate. <a href="#book-hawaii-hotels">Search your dates</a> to see live pricing rather than averages.</div></details>
+
+      <details class="faq-item"><summary>How far in advance should I book a Hawaii hotel?</summary>
+      <div class="faq-answer">For peak windows &mdash; Christmas through New Year, spring break, and mid-June through mid-August &mdash; book three to six months out. Shoulder season usually holds availability at six to eight weeks. Popular room categories like oceanfront and connecting rooms sell out well before standard rooms do.</div></details>
+
+      <details class="faq-item"><summary>What&rsquo;s the best way to compare Hawaii hotel prices?</summary>
+      <div class="faq-answer">Compare the checkout total, not the nightly rate. Two resorts advertised at the same number can land $100/night apart once the resort fee, parking, and Hawaii transient accommodations tax are added. Run the same dates and party size through a single search so you&rsquo;re comparing like for like, then confirm the fee breakdown on the property page before paying.</div></details>
+
+      <details class="faq-item"><summary>Can I cancel a Hawaii hotel booking?</summary>
+      <div class="faq-answer">It depends on the rate you choose. Free-cancellation rates are common and usually require 48&ndash;72 hours&rsquo; notice, though peak-season and holiday bookings often require more. Prepaid non-refundable rates are cheaper but locked. If your flights aren&rsquo;t confirmed yet, book the flexible rate first &mdash; you can always rebook if prices drop.</div></details>
 
       <details class="faq-item"><summary>What&rsquo;s the difference between Wailea and Waikiki?</summary>
       <div class="faq-answer">Waikiki sits inside Honolulu &mdash; urban, walkable, and packed with restaurants, shops, and nightlife. Wailea, on Maui, is a quieter master-planned resort zone with calm beaches and luxury resorts. Waikiki suits energy-seekers. Wailea suits relaxation-seekers.</div></details>
@@ -1265,6 +1562,65 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
   </div>
 </section>
 
+<section id="how-we-choose" class="method-section" aria-labelledby="method-heading">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow">~ Our Standards ~</span>
+      <h2 id="method-heading">How We Choose the <em>Featured Hotels</em></h2>
+      <p>Short version: editorial picks are editorial, advertising is labeled, and the two never trade places.</p>
+    </div>
+
+    <div class="method-grid">
+      <div class="method-card">
+        <h3>Real properties only</h3>
+        <p>Every hotel named on this page is an operating, recognized property with a verifiable address in Hawaii. We do not invent listings, and we do not pad the directory with properties we cannot confirm.</p>
+      </div>
+      <div class="method-card">
+        <h3>Selection is not for sale</h3>
+        <p>No hotel pays to appear in our Featured Hotels grid or comparison table. Paid placements exist on this site &mdash; they are always visibly labeled &ldquo;Sponsored Placement&rdquo; or &ldquo;Featured Partner.&rdquo;</p>
+      </div>
+      <div class="method-card">
+        <h3>Rates come from the source</h3>
+        <p>We don&rsquo;t publish stale nightly rates. Pricing on this page comes from a live Expedia search so you see what a room actually costs on your dates, not what it cost when the article was written.</p>
+      </div>
+      <div class="method-card">
+        <h3>Affiliate links are disclosed</h3>
+        <p>We earn a commission when travelers book through the rate search on this page. That revenue keeps the guide free. It has no influence over which hotels we feature or how we rank them.</p>
+      </div>
+    </div>
+
+    <div class="related-guides">
+      <h3>More Hawaii planning guides</h3>
+      <p style="font-size:.94rem;margin-bottom:1rem;">Once your hotel is booked, these companion guides cover what you'll actually do each day.</p>
+      <div class="related-links">
+        <a href="https://www.bestbeacheshawaii.com" rel="noopener" target="_blank">Best Beaches in Hawaii</a>
+        <a href="https://www.bestdivinghawaii.com" rel="noopener" target="_blank">Best Diving in Hawaii</a>
+        <a href="https://www.bestdivinginoahu.com" rel="noopener" target="_blank">Diving on Oahu</a>
+        <a href="https://www.attractionsoahu.com" rel="noopener" target="_blank">Oahu Attractions</a>
+        <a href="https://www.restauranthonolulu.com" rel="noopener" target="_blank">Honolulu Restaurants</a>
+        <a href="https://www.surflessonhonolulu.com" rel="noopener" target="_blank">Honolulu Surf Lessons</a>
+        <a href="https://www.oahufishingguides.com" rel="noopener" target="_blank">Oahu Fishing Guides</a>
+        <a href="https://www.massageshonolulu.com" rel="noopener" target="_blank">Honolulu Massage &amp; Spa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPEDIA RATE SEARCH — CLOSING (POST-RESEARCH) ============ -->
+<section class="booking-band" id="book-final" aria-labelledby="book-heading-3">
+  <div class="booking-inner">
+    <div class="booking-head">
+      <span class="booking-eyebrow">~ Ready When You Are ~</span>
+      <h2 id="book-heading-3">You've Done the Research. <em>Now Check the Price.</em></h2>
+      <p>One search covers every island, every tier, and every date. Free cancellation is available on most Hawaii properties, so you can lock a room now and keep your plans flexible.</p>
+    </div>
+    <div class="eg-frame">
+      <div class="eg-widget" data-widget="search" data-program="us-expedia" data-lobs="stays" data-network="pz" data-camref="1100l5QSrc" data-pubref="bhh-home-faq"></div>
+    </div>
+    <p class="affiliate-note">Powered by Expedia. BestHotelsHawaii.com may earn a commission from bookings made here, at no additional cost to you. <a href="#affiliate-disclosure">Full disclosure</a>.</p>
+  </div>
+</section>
+
 <section id="advertise" class="advertise-section" aria-labelledby="advertise-heading">
   <div class="advertise-inner">
     <div class="section-header">
@@ -1293,7 +1649,9 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
         <h3>Send an Inquiry</h3>
         <p class="form-sub">Tell us about your business. We&rsquo;ll reply within one business day.</p>
 
-        <form action="https://formsubmit.co/sales@eyetoad.com" method="POST" id="adForm">
+        <div class="form-error" id="formError" role="alert" aria-live="polite"></div>
+
+        <form method="POST" id="adForm" data-fs="sales@eyetoad.com" novalidate>
           <input type="hidden" name="_subject" value="New Ad Inquiry - BestHotelsHawaii.com">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
@@ -1344,7 +1702,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
             <label for="message">Tell Us About Your Business *</label>
             <textarea id="message" name="message" required placeholder="Hotel name, island, what makes you unique, and your advertising goals..."></textarea>
           </div>
-          <button type="submit" class="form-submit">Send Inquiry &rarr;</button>
+          <button type="submit" class="form-submit" id="adSubmit">Send Inquiry &rarr;</button>
           <p class="form-note">Protected against spam. We never share your information.</p>
         </form>
       </div>
@@ -1353,11 +1711,14 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
   </div>
 </section>
 
+</main>
+
+
 <footer class="site-footer">
   <div class="footer-grid">
 
     <div class="footer-col footer-brand">
-      <img src="/images/best-hotels-hawaii-logo.png" alt="Best Hotels Hawaii" class="footer-logo-img">
+      <img src="/images/best-hotels-hawaii-logo.png" alt="Best Hotels Hawaii" class="footer-logo-img" loading="lazy" decoding="async" width="200">
       <p>Your trusted, independent guide to the best hotels and resorts across the Hawaiian Islands. Plan with confidence.</p>
     </div>
 
@@ -1365,6 +1726,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       <h5>Explore</h5>
       <ul>
         <li><a href="#featured-hotels">Featured Hotels</a></li>
+        <li><a href="#compare-hotels">Compare Hotels</a></li>
         <li><a href="#hotels-by-island">Hotels by Island</a></li>
         <li><a href="#hotels-by-attraction">By Attraction</a></li>
         <li><a href="#unique-hotels">What Makes Each Unique</a></li>
@@ -1386,8 +1748,22 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
     </div>
 
     <div class="footer-col">
+      <h5>Hawaii Guides</h5>
+      <ul>
+        <li><a href="https://www.bestbeacheshawaii.com" rel="noopener" target="_blank">Best Beaches Hawaii</a></li>
+        <li><a href="https://www.bestdivinghawaii.com" rel="noopener" target="_blank">Best Diving Hawaii</a></li>
+        <li><a href="https://www.attractionsoahu.com" rel="noopener" target="_blank">Oahu Attractions</a></li>
+        <li><a href="https://www.restauranthonolulu.com" rel="noopener" target="_blank">Honolulu Restaurants</a></li>
+        <li><a href="https://www.surflessonhonolulu.com" rel="noopener" target="_blank">Surf Lessons Honolulu</a></li>
+        <li><a href="https://www.oahufishingguides.com" rel="noopener" target="_blank">Oahu Fishing Guides</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
       <h5>Business</h5>
       <ul>
+        <li><a href="#book-hawaii-hotels">Check Hotel Rates</a></li>
+        <li><a href="#how-we-choose">Editorial Standards</a></li>
         <li><a href="#advertise">Advertise With Us</a></li>
         <li><a href="mailto:sales@eyetoad.com">Contact Sales</a></li>
         <li><a href="/sitemap.html">Sitemap</a></li>
@@ -1397,6 +1773,10 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       </ul>
     </div>
 
+  </div>
+
+  <div class="footer-disclosure" id="affiliate-disclosure">
+    <strong>Affiliate disclosure.</strong> BestHotelsHawaii.com participates in the Expedia Group affiliate program. The hotel rate-search modules on this site are supplied by Expedia, and we may earn a commission when a traveler completes a booking through them. You pay the same price either way. Commissions fund the research and upkeep of this guide, and they play no part in which hotels we feature, how we describe them, or how we order them. Advertising sold directly by Best Hotels Hawaii is always labeled &ldquo;Sponsored Placement&rdquo; or &ldquo;Featured Partner.&rdquo; Rates, availability, taxes, and fees are set by the hotels and by Expedia, change frequently, and are confirmed at checkout &mdash; not here.
   </div>
 
   <div class="footer-bottom">
@@ -1416,19 +1796,21 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       "name": "Best Hotels Hawaii",
       "description": "Comprehensive directory and editorial guide to the best hotels and resorts across the Hawaiian Islands.",
       "publisher": {"@id": "https://www.besthotelshawaii.com/#organization"},
-      "inLanguage": "en-US",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.besthotelshawaii.com/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": "en-US"
     },
     {
       "@type": "Organization",
       "@id": "https://www.besthotelshawaii.com/#organization",
       "name": "Best Hotels Hawaii",
       "url": "https://www.besthotelshawaii.com/",
-      "logo": "https://www.besthotelshawaii.com/images/best-hotels-hawaii-logo.png",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.besthotelshawaii.com/#logo",
+        "url": "https://www.besthotelshawaii.com/images/best-hotels-hawaii-logo.png",
+        "caption": "Best Hotels Hawaii"
+      },
+      "image": {"@id": "https://www.besthotelshawaii.com/#logo"},
+      "description": "Independent editorial directory of the best hotels and resorts across Oahu, Maui, Kauai, Hawaii Island, Lanai, and Molokai.",
       "sameAs": ["https://www.eyetoad.com", "https://www.bigislandseo.com"],
       "contactPoint": {
         "@type": "ContactPoint",
@@ -1449,16 +1831,42 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       "url": "https://www.besthotelshawaii.com/",
       "name": "Best Hotels Hawaii | Top Resorts & Luxury Stays Across the Hawaiian Islands",
       "isPartOf": {"@id": "https://www.besthotelshawaii.com/#website"},
-      "about": {"@id": "https://www.besthotelshawaii.com/#organization"},
-      "primaryImageOfPage": "https://www.besthotelshawaii.com/images/best-hotels-hawaii.jpg",
+      "about": {"@id": "https://www.besthotelshawaii.com/#hawaii"},
+      "publisher": {"@id": "https://www.besthotelshawaii.com/#organization"},
+      "author": {"@id": "https://www.besthotelshawaii.com/#organization"},
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.besthotelshawaii.com/images/best-hotels-hawaii.jpg"
+      },
       "datePublished": "2026-05-12",
-      "dateModified": "2026-05-18",
-      "description": "Discover the best hotels in Hawaii across Oahu, Maui, Kauai, Big Island, and Lanai. Compare luxury resorts, beachfront hotels, honeymoon retreats, and family-friendly stays.",
+      "dateModified": "2026-08-11",
+      "description": "Discover the best hotels in Hawaii across Oahu, Maui, Kauai, Big Island, and Lanai. Compare luxury resorts, beachfront hotels, honeymoon retreats, and family-friendly stays, then check live rates.",
       "inLanguage": "en-US",
+      "significantLink": [
+        "https://www.besthotelshawaii.com/#featured-hotels",
+        "https://www.besthotelshawaii.com/#compare-hotels",
+        "https://www.besthotelshawaii.com/#hotels-by-island",
+        "https://www.besthotelshawaii.com/#faq"
+      ],
       "speakable": {
         "@type": "SpeakableSpecification",
-        "cssSelector": [".hero h1", ".hero p.lead", "#featured-heading", "#faq summary"]
+        "cssSelector": [".hero h1", ".quick-answer", "#featured-heading", "#faq summary"]
       }
+    },
+    {
+      "@type": "TouristDestination",
+      "@id": "https://www.besthotelshawaii.com/#hawaii",
+      "name": "Hawaii",
+      "description": "The Hawaiian Islands, a US state and Pacific archipelago whose six visitor-friendly islands are Oahu, Maui, Kauai, Hawaii Island (the Big Island), Lanai, and Molokai.",
+      "touristType": ["Luxury travelers", "Families", "Honeymooners", "Wellness travelers", "Adventure travelers"],
+      "includesAttraction": [
+        {"@type": "TouristAttraction", "name": "Waikiki Beach"},
+        {"@type": "TouristAttraction", "name": "Haleakala National Park"},
+        {"@type": "TouristAttraction", "name": "Hawaii Volcanoes National Park"},
+        {"@type": "TouristAttraction", "name": "Hanalei Bay"},
+        {"@type": "TouristAttraction", "name": "Mauna Kea"},
+        {"@type": "TouristAttraction", "name": "Hulopoe Bay"}
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -1473,7 +1881,8 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       "@id": "https://www.besthotelshawaii.com/#travelagency",
       "name": "Best Hotels Hawaii",
       "url": "https://www.besthotelshawaii.com/",
-      "description": "Hawaii hotels directory covering the best hotels in Hawaii across Oahu, Maui, Kauai, Big Island, Lanai, and Molokai. Luxury resorts, beachfront hotels, honeymoon retreats, and family resorts.",
+      "description": "Hawaii hotels directory covering the best hotels in Hawaii across Oahu, Maui, Kauai, Big Island, Lanai, and Molokai. Luxury resorts, beachfront hotels, honeymoon retreats, and family resorts, with live rate search.",
+      "parentOrganization": {"@id": "https://www.besthotelshawaii.com/#organization"},
       "areaServed": [
         {"@type": "AdministrativeArea", "name": "Hawaii"},
         {"@type": "Place", "name": "Oahu"},
@@ -1489,37 +1898,52 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
       "@id": "https://www.besthotelshawaii.com/#featuredhotels",
       "name": "Best Hotels Hawaii - Featured Properties",
       "description": "The best hotels in Hawaii curated by BestHotelsHawaii.com",
+      "itemListOrder": "https://schema.org/ItemListUnordered",
       "numberOfItems": 12,
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "item": {"@type": "Hotel", "name": "The Royal Hawaiian, a Luxury Collection Resort", "address": {"@type": "PostalAddress", "addressLocality": "Honolulu", "addressRegion": "HI", "addressCountry": "US"}}},
-        {"@type": "ListItem", "position": 2, "item": {"@type": "Hotel", "name": "Halekulani", "address": {"@type": "PostalAddress", "addressLocality": "Honolulu", "addressRegion": "HI", "addressCountry": "US"}}},
-        {"@type": "ListItem", "position": 3, "item": {"@type": "Hotel", "name": "Four Seasons Resort Maui at Wailea", "address": {"@type": "PostalAddress", "addressLocality": "Wailea", "addressRegion": "HI", "addressCountry": "US"}}},
-        {"@type": "ListItem", "position": 4, "item": {"@type": "Hotel", "name": "Grand Wailea, A Waldorf Astoria Resort", "address": {"@type": "PostalAddress", "addressLocality": "Wailea", "addressRegion": "HI", "addressCountry": "US"}}},
-        {"@type": "ListItem", "position": 5, "item": {"@type": "Hotel", "name": "Four Seasons Resort Hualalai", "address": {"@type": "PostalAddress", "addressLocality": "Kailua-Kona", "addressRegion": "HI", "addressCountry": "US"}}},
-        {"@type": "ListItem", "position": 6, "item": {"@type": "Hotel", "name": "Mauna Lani, Auberge Resorts Collection", "address": {"@type": "PostalAddress", "addressLocality": "Waimea", "addressRegion": "HI", "addressCountry": "US"}}},
-        {"@type": "ListItem", "position": 7, "item": {"@type": "Hotel", "name": "Turtle Bay Resort", "address": {"@type": "PostalAddress", "addressLocality": "Kahuku", "addressRegion": "HI", "addressCountry": "US"}}},
-        {"@type": "ListItem", "position": 8, "item": {"@type": "Hotel", "name": "Montage Kapalua Bay", "address": {"@type": "PostalAddress", "addressLocality": "Lahaina", "addressRegion": "HI", "addressCountry": "US"}}},
-        {"@type": "ListItem", "position": 9, "item": {"@type": "Hotel", "name": "1 Hotel Hanalei Bay", "address": {"@type": "PostalAddress", "addressLocality": "Princeville", "addressRegion": "HI", "addressCountry": "US"}}},
-        {"@type": "ListItem", "position": 10, "item": {"@type": "Hotel", "name": "Four Seasons Resort Lanai", "address": {"@type": "PostalAddress", "addressLocality": "Lanai City", "addressRegion": "HI", "addressCountry": "US"}}},
-        {"@type": "ListItem", "position": 11, "item": {"@type": "Hotel", "name": "The Ritz-Carlton Maui, Kapalua", "address": {"@type": "PostalAddress", "addressLocality": "Lahaina", "addressRegion": "HI", "addressCountry": "US"}}},
-        {"@type": "ListItem", "position": 12, "item": {"@type": "Hotel", "name": "Aulani, A Disney Resort & Spa", "address": {"@type": "PostalAddress", "addressLocality": "Kapolei", "addressRegion": "HI", "addressCountry": "US"}}}
+        {"@type": "ListItem", "position": 1, "url": "https://www.besthotelshawaii.com/#hotel-royal-hawaiian", "item": {"@type": "Hotel", "name": "The Royal Hawaiian, a Luxury Collection Resort", "description": "Historic beachfront resort on Waikiki Beach, open since 1927.", "address": {"@type": "PostalAddress", "addressLocality": "Honolulu", "addressRegion": "HI", "addressCountry": "US"}}},
+        {"@type": "ListItem", "position": 2, "url": "https://www.besthotelshawaii.com/#hotel-halekulani", "item": {"@type": "Hotel", "name": "Halekulani", "description": "Oceanfront Waikiki luxury hotel known for quiet service and fine dining.", "address": {"@type": "PostalAddress", "addressLocality": "Honolulu", "addressRegion": "HI", "addressCountry": "US"}}},
+        {"@type": "ListItem", "position": 3, "url": "https://www.besthotelshawaii.com/#hotel-four-seasons-maui", "item": {"@type": "Hotel", "name": "Four Seasons Resort Maui at Wailea", "description": "South Maui beachfront resort with three oceanfront pools and no resort fee.", "address": {"@type": "PostalAddress", "addressLocality": "Wailea", "addressRegion": "HI", "addressCountry": "US"}}},
+        {"@type": "ListItem", "position": 4, "url": "https://www.besthotelshawaii.com/#hotel-grand-wailea", "item": {"@type": "Hotel", "name": "Grand Wailea, A Waldorf Astoria Resort", "description": "Family-focused Wailea resort with nine pools and an extensive kids program.", "address": {"@type": "PostalAddress", "addressLocality": "Wailea", "addressRegion": "HI", "addressCountry": "US"}}},
+        {"@type": "ListItem", "position": 5, "url": "https://www.besthotelshawaii.com/#hotel-hualalai", "item": {"@type": "Hotel", "name": "Four Seasons Resort Hualalai", "description": "Low-rise bungalow resort on the black-lava Kona Coast of Hawaii Island.", "address": {"@type": "PostalAddress", "addressLocality": "Kailua-Kona", "addressRegion": "HI", "addressCountry": "US"}}},
+        {"@type": "ListItem", "position": 6, "url": "https://www.besthotelshawaii.com/#hotel-mauna-lani", "item": {"@type": "Hotel", "name": "Mauna Lani, Auberge Resorts Collection", "description": "Kohala Coast resort set among ancient Hawaiian fishponds and petroglyph fields.", "address": {"@type": "PostalAddress", "addressLocality": "Waimea", "addressRegion": "HI", "addressCountry": "US"}}},
+        {"@type": "ListItem", "position": 7, "url": "https://www.besthotelshawaii.com/#hotel-turtle-bay", "item": {"@type": "Hotel", "name": "Turtle Bay Resort", "description": "The only resort on Oahu's North Shore, with surf, golf, and horseback riding.", "address": {"@type": "PostalAddress", "addressLocality": "Kahuku", "addressRegion": "HI", "addressCountry": "US"}}},
+        {"@type": "ListItem", "position": 8, "url": "https://www.besthotelshawaii.com/#hotel-montage-kapalua", "item": {"@type": "Hotel", "name": "Montage Kapalua Bay", "description": "All-suite Maui resort above a marine-protected snorkeling bay.", "address": {"@type": "PostalAddress", "addressLocality": "Lahaina", "addressRegion": "HI", "addressCountry": "US"}}},
+        {"@type": "ListItem", "position": 9, "url": "https://www.besthotelshawaii.com/#hotel-1-hanalei-bay", "item": {"@type": "Hotel", "name": "1 Hotel Hanalei Bay", "description": "Sustainability-focused luxury hotel above Hanalei Bay in Princeville, Kauai.", "address": {"@type": "PostalAddress", "addressLocality": "Princeville", "addressRegion": "HI", "addressCountry": "US"}}},
+        {"@type": "ListItem", "position": 10, "url": "https://www.besthotelshawaii.com/#hotel-four-seasons-lanai", "item": {"@type": "Hotel", "name": "Four Seasons Resort Lanai", "description": "Near-private-island luxury resort overlooking Hulopoe Bay.", "address": {"@type": "PostalAddress", "addressLocality": "Lanai City", "addressRegion": "HI", "addressCountry": "US"}}},
+        {"@type": "ListItem", "position": 11, "url": "https://www.besthotelshawaii.com/#hotel-ritz-carlton-kapalua", "item": {"@type": "Hotel", "name": "The Ritz-Carlton Maui, Kapalua", "description": "West Maui resort with two championship golf courses and a full spa.", "address": {"@type": "PostalAddress", "addressLocality": "Lahaina", "addressRegion": "HI", "addressCountry": "US"}}},
+        {"@type": "ListItem", "position": 12, "url": "https://www.besthotelshawaii.com/#hotel-aulani", "item": {"@type": "Hotel", "name": "Aulani, A Disney Resort & Spa", "description": "Ko Olina family resort combining Disney service with Hawaiian cultural programming.", "address": {"@type": "PostalAddress", "addressLocality": "Kapolei", "addressRegion": "HI", "addressCountry": "US"}}}
       ]
     },
     {
       "@type": "FAQPage",
       "@id": "https://www.besthotelshawaii.com/#faqpage",
+      "isPartOf": {"@id": "https://www.besthotelshawaii.com/#webpage"},
       "mainEntity": [
-        {"@type": "Question", "name": "What are the best hotels in Hawaii for first-time visitors?", "acceptedAnswer": {"@type": "Answer", "text": "Oahu and Maui share the title. The best hotels in Hawaii for newcomers include The Royal Hawaiian and Halekulani on Oahu, and Four Seasons Maui or Grand Wailea for Maui."}},
-        {"@type": "Question", "name": "Which Hawaiian island has the best hotels?", "acceptedAnswer": {"@type": "Answer", "text": "Maui leads in luxury resort depth. The Big Island holds the title for boutique wellness with Four Seasons Hualalai and Mauna Lani. Oahu wins for iconic historic hotels."}},
-        {"@type": "Question", "name": "When is the cheapest time to visit Hawaii?", "acceptedAnswer": {"@type": "Answer", "text": "April (after Easter), early May, September, and early October offer the lowest rates and lighter crowds with excellent weather."}},
-        {"@type": "Question", "name": "How much do Hawaii hotels typically cost?", "acceptedAnswer": {"@type": "Answer", "text": "Mid-range resorts start around $300-$500 per night. Luxury beachfront properties run $800-$2,500+ per night. Resort fees and taxes can add 20-30%."}},
-        {"@type": "Question", "name": "Do Hawaii hotels charge resort fees?", "acceptedAnswer": {"@type": "Answer", "text": "Most do, typically $35-$60 per night. Four Seasons properties in Hawaii do not charge resort fees. Always confirm the total before booking."}},
-        {"@type": "Question", "name": "Which Hawaii hotels are best for families?", "acceptedAnswer": {"@type": "Answer", "text": "Grand Wailea, Aulani Disney Resort, Four Seasons Resort Maui at Wailea, and Hilton Hawaiian Village all run strong kids programs and sit on swimmable beaches."}},
-        {"@type": "Question", "name": "Which Hawaii hotels are best for honeymoons?", "acceptedAnswer": {"@type": "Answer", "text": "Halekulani, Hotel Wailea (adults-only), Montage Kapalua Bay, Four Seasons Hualalai, and Sensei Lanai are top Hawaii honeymoon resorts offering privacy and exceptional service."}},
-        {"@type": "Question", "name": "What are the best luxury hotels in Hawaii?", "acceptedAnswer": {"@type": "Answer", "text": "Top luxury hotels in Hawaii include Four Seasons Hualalai, Four Seasons Resort Maui at Wailea, Halekulani, Four Seasons Resort Lanai, and Sensei Lanai. All offer exceptional service with no resort fees."}},
-        {"@type": "Question", "name": "What is the rainiest island in Hawaii?", "acceptedAnswer": {"@type": "Answer", "text": "Kauai gets the most annual rainfall. Rain typically falls in short bursts. Pack a light rain shell year-round."}},
-        {"@type": "Question", "name": "How many days do I need in Hawaii?", "acceptedAnswer": {"@type": "Answer", "text": "Seven nights minimum for one island. Ten to fourteen nights if you island-hop. Account for one travel day per island change."}},
-        {"@type": "Question", "name": "How do I advertise on BestHotelsHawaii.com?", "acceptedAnswer": {"@type": "Answer", "text": "Use the inquiry form on the site or email sales@eyetoad.com. We offer horizontal banners, vertical sidebar placements, featured-hotel cards, and sponsored content with do-follow links."}}
+        {"@type": "Question", "name": "What are the best hotels in Hawaii for first-time visitors?", "acceptedAnswer": {"@type": "Answer", "text": "Oahu and Maui share the title for best first-time destinations. The best hotels in Hawaii for newcomers include The Royal Hawaiian and Halekulani on Oahu, and Four Seasons Maui or Grand Wailea for Maui. Most first-timers split their trip between the two islands."}},
+        {"@type": "Question", "name": "Which Hawaiian island has the best hotels?", "acceptedAnswer": {"@type": "Answer", "text": "Maui leads in luxury resort depth, particularly in Wailea and Kapalua. The Big Island holds the title for boutique wellness, especially Four Seasons Hualalai and Mauna Lani. Oahu wins for iconic, historic hotels like The Royal Hawaiian and Halekulani."}},
+        {"@type": "Question", "name": "When is the cheapest time to visit Hawaii?", "acceptedAnswer": {"@type": "Answer", "text": "April after Easter, early May, September, and early October offer the lowest rates and lighter crowds. The weather stays excellent across all islands during these months. Shoulder season is genuinely the best deal for Hawaii vacation hotels."}},
+        {"@type": "Question", "name": "How much do Hawaii hotels typically cost?", "acceptedAnswer": {"@type": "Answer", "text": "Mid-range resorts start around 300 to 500 dollars per night. Luxury beachfront properties run 800 to 2,500 dollars or more per night. Boutique and condo-style stays often deliver better value. Resort fees, parking, and taxes can add 20 to 30 percent to the published rate."}},
+        {"@type": "Question", "name": "How far in advance should I book a Hawaii hotel?", "acceptedAnswer": {"@type": "Answer", "text": "For peak windows such as Christmas through New Year, spring break, and mid-June through mid-August, book three to six months out. Shoulder season usually holds availability at six to eight weeks. Popular room categories like oceanfront and connecting rooms sell out well before standard rooms do."}},
+        {"@type": "Question", "name": "What is the best way to compare Hawaii hotel prices?", "acceptedAnswer": {"@type": "Answer", "text": "Compare the checkout total, not the nightly rate. Two resorts advertised at the same number can land 100 dollars per night apart once the resort fee, parking, and Hawaii transient accommodations tax are added. Run the same dates and party size through a single search, then confirm the fee breakdown before paying."}},
+        {"@type": "Question", "name": "Can I cancel a Hawaii hotel booking?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the rate you choose. Free-cancellation rates are common and usually require 48 to 72 hours notice, though peak-season and holiday bookings often require more. Prepaid non-refundable rates are cheaper but locked. If flights are not confirmed yet, book the flexible rate first."}},
+        {"@type": "Question", "name": "What is the difference between Wailea and Waikiki?", "acceptedAnswer": {"@type": "Answer", "text": "Waikiki sits inside Honolulu and is urban, walkable, and packed with restaurants, shops, and nightlife. Wailea, on Maui, is a quieter master-planned resort zone with calm beaches and luxury resorts. Waikiki suits energy-seekers and Wailea suits relaxation-seekers."}},
+        {"@type": "Question", "name": "Do Hawaii hotels charge resort fees?", "acceptedAnswer": {"@type": "Answer", "text": "Most do. Resort fees typically run 35 to 60 dollars per night. Notably, Four Seasons properties in Hawaii do not charge resort fees. Always confirm the total before you book."}},
+        {"@type": "Question", "name": "Which Hawaii hotels are best for families?", "acceptedAnswer": {"@type": "Answer", "text": "Grand Wailea on Maui, Aulani Disney Resort on Oahu, Four Seasons Resort Maui at Wailea, and Hilton Hawaiian Village on Oahu all run strong kids programs, multiple pools, and family-friendly suites. All sit on swimmable beaches."}},
+        {"@type": "Question", "name": "Which Hawaii hotels are best for honeymoons?", "acceptedAnswer": {"@type": "Answer", "text": "Halekulani on Oahu, Hotel Wailea which is adults-only on Maui, Montage Kapalua Bay on Maui, Four Seasons Resort Hualalai on the Big Island, and Sensei Lanai stand out as top Hawaii honeymoon resorts. All offer privacy, exceptional service, and sunset-friendly settings."}},
+        {"@type": "Question", "name": "Should I rent a car in Hawaii?", "acceptedAnswer": {"@type": "Answer", "text": "Skip the car on Oahu if you base in Waikiki. Rent on Maui, Kauai, and the Big Island because public transit is limited and the best beaches require a drive. Book early, since rentals sell out especially in peak season."}},
+        {"@type": "Question", "name": "Are all-inclusive resorts a thing in Hawaii?", "acceptedAnswer": {"@type": "Answer", "text": "Not really. Hawaii has very few traditional all-inclusive resorts. Travelers generally pay separately for meals, activities, and excursions. Some properties bundle breakfast or daily credit packages, so ask before booking."}},
+        {"@type": "Question", "name": "What is the best Hawaii hotel for snorkeling right from the beach?", "acceptedAnswer": {"@type": "Answer", "text": "Four Seasons Resort Lanai at Hulopoe Bay, Montage Kapalua Bay, and Four Seasons Hualalai deliver excellent snorkeling steps from your room. Hawaii marine life genuinely shines at these properties."}},
+        {"@type": "Question", "name": "Is Hawaii safe for solo travelers?", "acceptedAnswer": {"@type": "Answer", "text": "Generally yes. Hawaii ranks among the safest US destinations. Standard precautions apply, including locking the car, avoiding isolated trails at night, and respecting local customs. Solo female travelers report very positive experiences across all islands."}},
+        {"@type": "Question", "name": "How many days do I need in Hawaii?", "acceptedAnswer": {"@type": "Answer", "text": "Seven nights minimum for one island. Ten to fourteen nights if you island-hop. Account for one travel day per island change. A rushed Hawaii trip tends to feel exhausting rather than relaxing."}},
+        {"@type": "Question", "name": "What is the rainiest island in Hawaii?", "acceptedAnswer": {"@type": "Answer", "text": "Kauai gets the most annual rainfall, which is why it is so green. Rain typically falls in short bursts and clears quickly. Pack a light rain shell year-round."}},
+        {"@type": "Question", "name": "Which Hawaii hotel has the best view?", "acceptedAnswer": {"@type": "Answer", "text": "1 Hotel Hanalei Bay on the Kauai cliffs, Mauna Kea Beach Hotel on the Big Island crescent beach, and the Diamond Head suites at Halekulani consistently top the lists. Request a high-floor ocean-view room when booking."}},
+        {"@type": "Question", "name": "What is the difference between Big Island and Hawaii Island?", "acceptedAnswer": {"@type": "Answer", "text": "They are the same place. Big Island is the local nickname for the island officially named Hawaii. The nickname avoids confusion with the entire state of Hawaii."}},
+        {"@type": "Question", "name": "Can I see lava at Hawaii hotels?", "acceptedAnswer": {"@type": "Answer", "text": "Active lava only flows on the Big Island and only during eruption cycles. No hotel guarantees lava views. Stay on the Kohala or Kona Coast and drive to Hawaii Volcanoes National Park for the experience."}},
+        {"@type": "Question", "name": "Do Hawaii hotels offer airport shuttles?", "acceptedAnswer": {"@type": "Answer", "text": "Most do not. A few high-end resorts arrange transfers for an extra fee. Plan on rideshare, taxi, or rental car pickup at the airport, and confirm with your hotel ahead of time."}},
+        {"@type": "Question", "name": "What is the dress code for Hawaii hotels and dining?", "acceptedAnswer": {"@type": "Answer", "text": "Almost everywhere is casual to resort casual. Even at upscale restaurants, an aloha shirt and slacks work fine for men, and sundresses or skirts work for women. Pack light layers and one nicer outfit per traveler."}},
+        {"@type": "Question", "name": "What are the best luxury hotels in Hawaii?", "acceptedAnswer": {"@type": "Answer", "text": "The top luxury hotels in Hawaii include Four Seasons Hualalai on the Big Island, Four Seasons Resort Maui at Wailea, Halekulani on Oahu, Four Seasons Resort Lanai, and Sensei Lanai. All offer exceptional service, stunning settings, and no resort fees."}},
+        {"@type": "Question", "name": "How do I advertise my Hawaii hotel or tour business on BestHotelsHawaii.com?", "acceptedAnswer": {"@type": "Answer", "text": "Use the inquiry form on the site. Placements include horizontal banners, vertical sidebar placements, featured-hotel cards, and sponsored content. Every paid placement includes a do-follow link. Email sales@eyetoad.com for custom proposals."}}
       ]
     }
   ]
@@ -1527,25 +1951,7 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
 </script>
 
 <script>
-(function(){
-  var stamp = Date.now();
-  var f = document.getElementById('form_load_time');
-  if(f) f.value = String(stamp);
-  var form = document.getElementById('adForm');
-  if(form){
-    form.addEventListener('submit',function(e){
-      var honey = document.getElementById('_honey');
-      var loaded = parseInt(document.getElementById('form_load_time').value,10);
-      var elapsed = Date.now() - loaded;
-      if((honey && honey.value) || elapsed < 3000){
-        e.preventDefault();
-        console.log('Spam protection triggered.');
-        return false;
-      }
-    });
-  }
-})();
-
+/* ---------- Mobile navigation ---------- */
 (function(){
   var btn = document.getElementById('menuToggle');
   var nav = document.getElementById('mainNav');
@@ -1562,7 +1968,121 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
     });
   }
 })();
+
+/* ---------- Advertising inquiry form: FormSubmit + layered spam protection ---------- */
+(function(){
+  var form = document.getElementById('adForm');
+  if(!form) return;
+
+  var submitBtn  = document.getElementById('adSubmit');
+  var errorBox   = document.getElementById('formError');
+  var loadStamp  = Date.now();
+  var loadField  = document.getElementById('form_load_time');
+  if(loadField) loadField.value = String(loadStamp);
+
+  var MIN_ELAPSED_MS = 4000;    // time trap
+  var THROTTLE_MS    = 60000;   // one submit per minute
+  var THROTTLE_KEY   = 'bhh_last_submit';
+
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i;
+  var NAME_RE  = /^[a-z\u00C0-\u024F' .-]{2,60}$/i;
+  var PHONE_RE = /^[0-9+()\s.-]{7,20}$/;
+  var SPAM_WORDS = ['viagra','cialis','casino','bitcoin','crypto wallet','payday loan','porn','escort','xanax','forex signals'];
+
+  function buildAction(f){
+    var to = f.getAttribute('data-fs') || '';
+    return 'https://formsubmit.co/' + to;
+  }
+
+  function fail(msg){
+    if(errorBox){
+      errorBox.textContent = msg;
+      errorBox.classList.add('show');
+      errorBox.scrollIntoView({block:'center'});
+    }
+    return false;
+  }
+
+  function clearError(){
+    if(errorBox){ errorBox.textContent=''; errorBox.classList.remove('show'); }
+  }
+
+  form.addEventListener('submit', function(e){
+    clearError();
+
+    var honey   = document.getElementById('_honey');
+    var name    = (form.querySelector('#name').value || '').trim();
+    var company = (form.querySelector('#company').value || '').trim();
+    var email   = (form.querySelector('#email').value || '').trim();
+    var phone   = (form.querySelector('#phone').value || '').trim();
+    var place   = (form.querySelector('#placement').value || '').trim();
+    var message = (form.querySelector('#message').value || '').trim();
+    var elapsed = Date.now() - loadStamp;
+
+    // 1. Honeypot
+    if(honey && honey.value){ e.preventDefault(); return false; }
+
+    // 2. Time trap
+    if(elapsed < MIN_ELAPSED_MS){
+      e.preventDefault();
+      return fail('That was quick. Take a moment to review your details, then send again.');
+    }
+
+    // 3. Throttle
+    try{
+      var last = parseInt(window.localStorage.getItem(THROTTLE_KEY) || '0', 10);
+      if(last && (Date.now() - last) < THROTTLE_MS){
+        e.preventDefault();
+        return fail('We already received an inquiry from this device. Please wait a minute before sending another.');
+      }
+    }catch(err){ /* storage unavailable - continue */ }
+
+    // 4. Field validation
+    if(!NAME_RE.test(name)){
+      e.preventDefault();
+      return fail('Please enter your name using letters only.');
+    }
+    if(company.length < 2){
+      e.preventDefault();
+      return fail('Please enter your company or hotel name.');
+    }
+    if(!EMAIL_RE.test(email)){
+      e.preventDefault();
+      return fail('Please enter a valid email address so we can reply.');
+    }
+    if(phone && !PHONE_RE.test(phone)){
+      e.preventDefault();
+      return fail('Please enter a valid phone number, or leave the field blank.');
+    }
+    if(!place){
+      e.preventDefault();
+      return fail('Please choose the placement you are interested in.');
+    }
+    if(message.length < 15){
+      e.preventDefault();
+      return fail('Tell us a little more about your business so we can send useful options.');
+    }
+
+    // 5. Spam keyword filter
+    var blob = (name + ' ' + company + ' ' + message).toLowerCase();
+    for(var i=0;i<SPAM_WORDS.length;i++){
+      if(blob.indexOf(SPAM_WORDS[i]) !== -1){ e.preventDefault(); return false; }
+    }
+
+    // 6. Passed - build endpoint at submit time, lock button
+    form.setAttribute('action', buildAction(form));
+    try{ window.localStorage.setItem(THROTTLE_KEY, String(Date.now())); }catch(err){}
+    if(submitBtn){
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending\u2026';
+    }
+    return true;
+  });
+})();
 </script>
+
+<!-- Expedia Group affiliate widgets: one loader for all placements on this page -->
+<script class="eg-widgets-script" src="https://creator.expediagroup.com/products/widgets/assets/eg-widgets.js" defer></script>
 
 </body>
 </html>
