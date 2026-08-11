@@ -85,7 +85,7 @@ body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--lava);l
 a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:3px}
 
 /* HEADER */
-header.site-header{position:sticky;top:0;z-index:100;background:rgba(253,248,240,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(10,77,104,.1);padding:.7rem 2rem}
+header.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(10,77,104,.1);padding:.7rem 2rem}
 .header-inner{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:1rem}
 .logo{display:flex;align-items:center;text-decoration:none;color:var(--ocean);min-height:62px}
 .logo img{width:260px;height:auto;display:block}
@@ -177,17 +177,6 @@ section{padding:5rem 1.5rem;position:relative}
 .intro-photo{width:100%;height:420px;object-fit:cover;border-radius:10px;box-shadow:var(--shadow-medium);display:block}
 @media(max-width:800px){.intro-grid{grid-template-columns:1fr;gap:2rem}.intro-photo{height:260px}}
 
-/* AD PLACEHOLDERS */
-.ad-slot{margin:3rem auto;max-width:1280px;padding:0 1.5rem}
-.ad-label{text-align:center;font-size:.7rem;text-transform:uppercase;letter-spacing:.2em;color:rgba(10,77,104,.5);margin-bottom:.6rem}
-.ad-placeholder-banner{background:linear-gradient(135deg,rgba(245,230,211,.5) 0%,rgba(253,248,240,.8) 100%);border:2px dashed rgba(10,77,104,.22);border-radius:8px;padding:1.6rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;min-height:100px;transition:border-color .25s}
-.ad-placeholder-banner:hover{border-color:var(--coral)}
-.ad-ph-text h4{font-family:'Cormorant Garamond',serif;color:var(--ocean);font-size:1.35rem;margin-bottom:.25rem;font-weight:600}
-.ad-ph-text p{font-size:.85rem;color:var(--lava);opacity:.72}
-.ad-ph-badge{display:inline-block;background:var(--ocean);color:var(--cream);font-size:.7rem;padding:.2rem .6rem;border-radius:50px;margin-bottom:.5rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
-.ad-ph-cta{display:inline-block;background:var(--coral);color:var(--cream);padding:.65rem 1.4rem;border-radius:4px;text-decoration:none;font-weight:600;font-size:.9rem;white-space:nowrap;transition:all .2s;flex-shrink:0}
-.ad-ph-cta:hover{background:var(--ocean);transform:translateY(-1px)}
-
 /* HOTELS GRID */
 .hotels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem}
 .hotel-card{background:var(--paper);border-radius:8px;overflow:hidden;box-shadow:var(--shadow-soft);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column;border:1px solid rgba(10,77,104,.05)}
@@ -261,12 +250,6 @@ table.compare-table td.hotel-col{font-weight:600;color:var(--ocean)}
 .amenity-text strong{display:block;color:var(--ocean);margin-bottom:.2rem;font-weight:600}
 .amenity-text small{font-size:.85rem;color:var(--lava)}
 .vertical-ad-wrap{position:sticky;top:110px}
-.ad-vertical{background:var(--paper);border:2px dashed var(--coral);border-radius:8px;padding:2rem 1rem;text-align:center;margin-bottom:1.5rem}
-.ad-vertical h4{font-family:'Cormorant Garamond',serif;color:var(--ocean);font-size:1.4rem;margin-bottom:.6rem}
-.ad-vertical p{font-size:.85rem;color:var(--lava);margin-bottom:1rem}
-.ad-vertical .ad-rate{background:var(--ocean);color:var(--cream);padding:.5rem 1rem;border-radius:4px;font-size:.85rem;display:inline-block;margin-bottom:1rem;font-weight:600}
-.ad-vertical-cta{display:inline-block;background:var(--coral);color:var(--cream);padding:.6rem 1.2rem;border-radius:4px;text-decoration:none;font-weight:600;font-size:.9rem;transition:background .2s}
-.ad-vertical-cta:hover{background:var(--ocean)}
 .side-book{background:linear-gradient(160deg,var(--ocean) 0%,var(--teal) 100%);color:var(--cream);border-radius:8px;padding:1.6rem 1.3rem;text-align:center;margin-bottom:1.5rem;box-shadow:var(--shadow-medium)}
 .side-book h4{font-family:'Cormorant Garamond',serif;font-size:1.4rem;margin-bottom:.5rem}
 .side-book p{font-size:.86rem;opacity:.94;margin-bottom:1rem}
@@ -360,19 +343,19 @@ details.faq-item .faq-answer a{color:var(--teal);font-weight:600}
 @media(max-width:800px){.advertise-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
 
 /* FOOTER */
-footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 2rem}
+footer.site-footer{background:#fff;color:var(--lava);padding:4rem 1.5rem 2rem;border-top:1px solid rgba(10,77,104,.12)}
 .footer-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:2.4rem;margin-bottom:3rem}
-.footer-brand .footer-logo-img{width:200px;height:auto;display:block;margin-bottom:1rem;filter:brightness(0) invert(1) opacity(.85)}
-.footer-col h5{font-family:'Cormorant Garamond',serif;color:var(--plumeria);font-size:1.2rem;margin-bottom:1rem;font-weight:600}
+.footer-brand .footer-logo-img{width:200px;height:auto;display:block;margin-bottom:1rem}
+.footer-col h5{font-family:'Cormorant Garamond',serif;color:var(--ocean);font-size:1.2rem;margin-bottom:1rem;font-weight:600}
 .footer-col ul{list-style:none;padding:0}
 .footer-col li{margin-bottom:.5rem}
-.footer-col a{color:var(--sand);text-decoration:none;font-size:.9rem;opacity:.75;transition:opacity .2s,color .2s}
+.footer-col a{color:var(--ocean-deep);text-decoration:none;font-size:.9rem;opacity:.82;transition:opacity .2s,color .2s}
 .footer-col a:hover{opacity:1;color:var(--coral)}
-.footer-brand p{margin-top:0;opacity:.7;font-size:.9rem}
-.footer-disclosure{max-width:1280px;margin:0 auto 2rem;padding:1.2rem 1.4rem;background:rgba(245,230,211,.07);border-left:3px solid var(--coral);border-radius:6px;font-size:.82rem;line-height:1.65;opacity:.85}
-.footer-disclosure strong{color:var(--plumeria)}
-.footer-bottom{max-width:1280px;margin:0 auto;padding-top:2rem;border-top:1px solid rgba(245,230,211,.15);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.85rem;opacity:.7}
-.footer-bottom a{color:var(--plumeria);text-decoration:none}
+.footer-brand p{margin-top:0;opacity:.78;font-size:.9rem;color:var(--lava)}
+.footer-disclosure{max-width:1280px;margin:0 auto 2rem;padding:1.2rem 1.4rem;background:var(--cream);border-left:3px solid var(--coral);border-radius:6px;font-size:.82rem;line-height:1.65;color:var(--lava);opacity:.92}
+.footer-disclosure strong{color:var(--ocean)}
+.footer-bottom{max-width:1280px;margin:0 auto;padding-top:2rem;border-top:1px solid rgba(10,77,104,.14);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.85rem;color:var(--lava);opacity:.78}
+.footer-bottom a{color:var(--teal);text-decoration:none;font-weight:600}
 .footer-bottom a:hover{color:var(--coral)}
 @media(max-width:1000px){.footer-grid{grid-template-columns:1fr 1fr 1fr;gap:2rem}}
 @media(max-width:700px){.footer-grid{grid-template-columns:1fr 1fr}}
@@ -476,17 +459,6 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
   </div>
 </section>
 
-<div class="ad-slot">
-  <div class="ad-label">Sponsored Placement</div>
-  <div class="ad-placeholder-banner">
-    <div class="ad-ph-text">
-      <span class="ad-ph-badge">Leaderboard Banner &middot; 728&times;90 &middot; Sitewide</span>
-      <h4>&#127964; Reach Active Hawaii Vacation Planners</h4>
-      <p>Your hotel, resort, tour, or activity business featured here &mdash; do-follow link included &mdash; from $295/month</p>
-    </div>
-    <a href="#advertise" class="ad-ph-cta">Reserve This Spot &rarr;</a>
-  </div>
-</div>
 
 
 <section id="featured-hotels" aria-labelledby="featured-heading">
@@ -1192,17 +1164,6 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
   </div>
 </section>
 
-<div class="ad-slot">
-  <div class="ad-label">Sponsored Placement</div>
-  <div class="ad-placeholder-banner">
-    <div class="ad-ph-text">
-      <span class="ad-ph-badge">Mid-Page Banner &middot; 728&times;90 &middot; High Engagement Zone</span>
-      <h4>&#127965; Hawaii Vacation Rental, Activity, or Tour Business?</h4>
-      <p>Premium mid-page placement &mdash; targeted travelers actively researching where to stay in Hawaii &mdash; from $295/month</p>
-    </div>
-    <a href="#advertise" class="ad-ph-cta">Get Featured &rarr;</a>
-  </div>
-</div>
 
 
 <section id="hotels-by-attraction" class="attractions-section" aria-labelledby="attractions-heading">
@@ -1367,12 +1328,6 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
           <p>Check what these amenities actually cost on your travel dates across every island.</p>
           <a href="#book-hawaii-hotels">Search Hawaii Hotels &rarr;</a>
         </div>
-        <div class="ad-vertical">
-          <h4>Advertise Here</h4>
-          <p>300&times;600 sidebar placement. Sitewide visibility. Do-follow link to your hotel, tour, or vacation rental.</p>
-          <span class="ad-rate">From $195/month</span><br><br>
-          <a href="#advertise" class="ad-vertical-cta">Inquire Now</a>
-        </div>
         <div style="background:var(--paper);border-radius:8px;padding:1.5rem;box-shadow:var(--shadow-soft);margin-top:1rem;">
           <h4 style="font-family:'Cormorant Garamond',serif;color:var(--ocean);margin-bottom:.5rem;">Pro Tip</h4>
           <p style="font-size:.9rem;color:var(--lava);">Always confirm whether <strong>parking</strong>, <strong>Wi-Fi</strong>, and <strong>beach gear</strong> are included before you book. Three extra &ldquo;fees&rdquo; can add $80/night fast.</p>
@@ -1464,17 +1419,6 @@ footer.site-footer{background:var(--lava);color:var(--sand);padding:4rem 1.5rem 
   </div>
 </section>
 
-<div class="ad-slot">
-  <div class="ad-label">Sponsored Placement</div>
-  <div class="ad-placeholder-banner">
-    <div class="ad-ph-text">
-      <span class="ad-ph-badge">Footer Leaderboard &middot; 728&times;90 &middot; Above FAQ</span>
-      <h4>&#127754; Hawaii Restaurant, Luau, or Excursion Provider?</h4>
-      <p>Advertise directly to travelers deciding how to spend their Hawaii vacation &mdash; do-follow link &mdash; from $145/month</p>
-    </div>
-    <a href="#advertise" class="ad-ph-cta">See All Placements &rarr;</a>
-  </div>
-</div>
 
 
 <section id="faq" class="faq-section" aria-labelledby="faq-heading">
