@@ -71,8 +71,8 @@ User-agent: facebookexternalhit
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.besthotelshawaii.com/sitemap.xml
-Sitemap: https://www.besthotelshawaii.com/sitemap.html
+Sitemap: https://besthotelshawaii.com/sitemap.xml
+Sitemap: https://besthotelshawaii.com/sitemap.html
 
 # Host
-Host: https://www.besthotelshawaii.com
+Host: besthotelshawaii.com
